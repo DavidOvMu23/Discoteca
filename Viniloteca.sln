@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36908.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{4FA10FEC-0B63-48DF-B6BA-379149369B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{F4A6F9D5-3FA7-4FA7-B8C3-E41392A37A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{0535C908-DF19-488D-9A72-511F6E0A65F1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FA10FEC-0B63-48DF-B6BA-379149369B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA10FEC-0B63-48DF-B6BA-379149369B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA10FEC-0B63-48DF-B6BA-379149369B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA10FEC-0B63-48DF-B6BA-379149369B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A6F9D5-3FA7-4FA7-B8C3-E41392A37A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A6F9D5-3FA7-4FA7-B8C3-E41392A37A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A6F9D5-3FA7-4FA7-B8C3-E41392A37A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A6F9D5-3FA7-4FA7-B8C3-E41392A37A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0535C908-DF19-488D-9A72-511F6E0A65F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0535C908-DF19-488D-9A72-511F6E0A65F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0535C908-DF19-488D-9A72-511F6E0A65F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0535C908-DF19-488D-9A72-511F6E0A65F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
