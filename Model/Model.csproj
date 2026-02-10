@@ -90,11 +90,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestorAlquileres.cs" />
-    <Compile Include="GestorArtistas.cs" />
-    <Compile Include="GestorGeneros.cs" />
-    <Compile Include="GestorUsuarios.cs" />
-    <Compile Include="GestorVinilos.cs" />
+    <Compile Include="AlquileresModel.cs" />
+    <Compile Include="ArtistasModel.cs" />
+    <Compile Include="GenerosModel.cs" />
+    <Compile Include="UsuariosModel.cs" />
+    <Compile Include="VinilosModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

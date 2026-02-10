@@ -5,17 +5,17 @@ using System.Configuration;
 
 namespace Model
 {
-    public class GestorArtistas
+    public class UsuariosModel
     {
         // Configuramos la cadena de conexión a la base de datos MySQL
         private string cadena = ConfigurationManager.ConnectionStrings["View.Properties.Settings.CadenaDiscoteca"].ConnectionString;
 
-        // Listar artistas
-        public DataTable ListarArtistas()
+        // Listar usuarios
+        public DataTable ListarUsuarios()
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "SELECT * FROM ARTISTAS";
+                string sql = "SELECT * FROM USUARIOS";
                 MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -23,32 +23,34 @@ namespace Model
             }
         }
 
-        // Crear artista
-        public void InsertarArtista(string nombre, string nacionalidad)
+        // Crear usuario
+        public void InsertarUsuario(string nombre, string email, string telefono)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "INSERT INTO ARTISTAS (nombre_artista, nacionalidad) VALUES (@nombre, @nacionalidad)";
+                string sql = "INSERT INTO USUARIOS (nombre, email, telefono) VALUES (@nombre, @email, @telefono)";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@nombre", nombre);
-                cmd.Parameters.AddWithValue("@nacionalidad", nacionalidad);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@telefono", telefono);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
         }
 
-        // Actualizar artista
-        public void ActualizarArtista(int id, string nombre, string nacionalidad)
+        // Actualizar usuario
+        public void ActualizarUsuario(int id, string nombre, string email, string telefono)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "UPDATE ARTISTAS SET nombre_artista = @nombre, nacionalidad = @nacionalidad WHERE id_artista = @id";
+                string sql = "UPDATE USUARIOS SET nombre = @nombre, email = @email, telefono = @telefono WHERE id_usuario = @id";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@nombre", nombre);
-                cmd.Parameters.AddWithValue("@nacionalidad", nacionalidad);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@telefono", telefono);
                 cmd.Parameters.AddWithValue("@id", id);
 
                 conn.Open();
@@ -56,12 +58,12 @@ namespace Model
             }
         }
 
-        // Eliminar artista
-        public void EliminarArtista(int id)
+        // Eliminar usuario
+        public void EliminarUsuario(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "DELETE FROM ARTISTAS WHERE id_artista = @id";
+                string sql = "DELETE FROM USUARIOS WHERE id_usuario = @id";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@id", id);

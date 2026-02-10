@@ -18,37 +18,37 @@ namespace View
     /// <summary>
     /// Lógica de interacción para reservas.xaml
     /// </summary>
-    public partial class Vinilos : Window
+    public partial class VinilosView : Window
     {
-        public Vinilos()
+        public VinilosView()
         {
             InitializeComponent();
         }
 
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
-            reservas reservas = new reservas();
+            ReservasView reservas = new ReservasView();
             reservas.Show();
             this.Close();
         }
 
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
-            artistas artistas = new artistas();
+            ArtistasView artistas = new ArtistasView();
             artistas.Show();
             this.Close();
         }
 
         private void button_generos_Click(object sender, RoutedEventArgs e)
         {
-            generos generos = new generos();
+            GenerosView generos = new GenerosView();
             generos.Show();
             this.Close();
         }
 
         private void button_usuarios_Click(object sender, RoutedEventArgs e)
         {
-            usuarios usuarios = new usuarios();
+            UsuariosView usuarios = new UsuariosView();
             usuarios.Show();
             this.Close();
         }

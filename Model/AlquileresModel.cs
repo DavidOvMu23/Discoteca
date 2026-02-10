@@ -5,7 +5,7 @@ using System.Configuration;
 
 namespace Model
 {
-    public class GestorAlquileres
+    public class AlquileresModel
     {
         // Configuramos la cadena de conexión a la base de datos MySQL
         private string cadena = ConfigurationManager.ConnectionStrings["View.Properties.Settings.CadenaDiscoteca"].ConnectionString;

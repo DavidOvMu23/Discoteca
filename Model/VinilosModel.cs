@@ -5,7 +5,7 @@ using System.Configuration;
 
 namespace Model
 {
-    public class GestorVinilos
+    public class VinilosModel
     {
         // Configuramos la cadena de conexión a la base de datos MySQL de AZURE
         private string cadena = ConfigurationManager.ConnectionStrings["View.Properties.Settings.CadenaDiscoteca"].ConnectionString;

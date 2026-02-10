@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>discoteca.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -61,8 +64,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="artistasForm.xaml.cs">
-      <DependentUpon>artistasForm.xaml</DependentUpon>
+    <Compile Include="ArtistasForm.xaml.cs">
+      <DependentUpon>ArtistasForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="generosForm.xaml.cs">
       <DependentUpon>generosForm.xaml</DependentUpon>
@@ -70,8 +73,8 @@
     <Compile Include="generos.xaml.cs">
       <DependentUpon>generos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="artistas.xaml.cs">
-      <DependentUpon>artistas.xaml</DependentUpon>
+    <Compile Include="ArtistasView.xaml.cs">
+      <DependentUpon>ArtistasView.xaml</DependentUpon>
     </Compile>
     <Compile Include="reservasForm.xaml.cs">
       <DependentUpon>reservasForm.xaml</DependentUpon>
@@ -117,10 +120,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="discoteca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="artistasForm.xaml">
+    <Page Include="ArtistasForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -132,7 +132,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="artistas.xaml">
+    <Page Include="ArtistasView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -163,6 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="discoteca.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
