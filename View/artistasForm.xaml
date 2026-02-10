@@ -1,4 +1,4 @@
-﻿<Window x:Class="View.artistas"
+﻿<Window x:Class="View.artistasForm"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,16 +29,16 @@
                 <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
-        <Border x:Name="border_nuevoArtista" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_nuevoArtista" Content="Nuevo Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoArtista_Click"/>
+        <Border x:Name="border_guardar" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
+            <Button x:Name="button_guardar" Content="Guardar Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_guardar_Click"/>
         </Border>
-        <Border x:Name="border_eliminarArtista" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
-            <Button x:Name="button_eliminarArtista" Content="Eliminar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
+            <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>
         </Border>
-        <Border x:Name="border_editarArtista" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
-            <Button x:Name="button_editarArtista" Content="Editar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
-        </Border>
+        <TextBox x:Name="textbox_nombre" HorizontalAlignment="Left" Margin="224,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_nacionalidad" HorizontalAlignment="Left" Margin="224,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <Label x:Name="label_nombre" Content="Nombre" HorizontalAlignment="Left" Margin="224,79,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_nacionalidad" Content="Nacionalidad" HorizontalAlignment="Left" Margin="224,149,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

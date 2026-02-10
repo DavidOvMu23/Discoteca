@@ -17,9 +17,9 @@ namespace View
     /// <summary>
     /// Lógica de interacción para reservas.xaml
     /// </summary>
-    public partial class artistas : Window
+    public partial class generosForm : Window
     {
-        public artistas()
+        public generosForm()
         {
             InitializeComponent();
         }
@@ -38,10 +38,10 @@ namespace View
             this.Close();
         }
 
-        private void button_generos_Click(object sender, RoutedEventArgs e)
+        private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
-            generos generos = new generos();
-            generos.Show();
+            artistas artistas = new artistas();
+            artistas.Show();
             this.Close();
         }
 
@@ -52,10 +52,10 @@ namespace View
             this.Close();
         }
 
-        private void button_nuevoArtista_Click(object sender, RoutedEventArgs e)
+        private void button_cancelar_Click(object sender, RoutedEventArgs e)
         {
-            artistasForm artistasForm = new artistasForm();
-            artistasForm.Show();
+            generos generos = new generos();
+            generos.Show();
             this.Close();
         }
     }

@@ -1,13 +1,13 @@
-﻿<Window x:Class="View.artistas"
+﻿<Window x:Class="View.reservasForm"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="Artistas" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight">
+        Title="Reservas" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight">
     <Grid Background="#FFF9F7F2">
-        <Label x:Name="label_tituloPagina" Content="Artistas&#xD;&#xA;" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
+        <Label x:Name="label_tituloPagina" Content="Reservas" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
         <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect Color="#80000000" BlurRadius="12" ShadowDepth="0" Opacity="0.65"/>
@@ -16,11 +16,11 @@
         <Image x:Name="titulo" HorizontalAlignment="Left" Height="189" Margin="16,-43,0,0" VerticalAlignment="Top" Width="164" Source="/titulo.png"/>
 
         <StackPanel x:Name="stackpanel_menu" Orientation="Vertical" HorizontalAlignment="Left" Margin="31,82,0,0" VerticalAlignment="Top" Width="135">
-            <Border x:Name="border_reservas" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_reservas" Content="Reservas" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_reservas_Click"/>
-            </Border>
             <Border x:Name="border_vinilos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
                 <Button x:Name="button_vinilos" Content="Vinilos" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_vinilos_Click"/>
+            </Border>
+            <Border x:Name="border_artistas" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
+                <Button x:Name="button_artistas" Content="Artistas" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_artistas_Click"/>
             </Border>
             <Border x:Name="border_generos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
                 <Button x:Name="button_generos" Content="Géneros" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_generos_Click"/>
@@ -29,16 +29,18 @@
                 <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
-        <Border x:Name="border_nuevoArtista" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_nuevoArtista" Content="Nuevo Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoArtista_Click"/>
+        <Border x:Name="border_guardar" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
+            <Button x:Name="button_guardar" Content="Guardar Reserva" Background="Transparent" BorderThickness="0" Foreground="White"/>
         </Border>
-        <Border x:Name="border_eliminarArtista" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
-            <Button x:Name="button_eliminarArtista" Content="Eliminar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
+            <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_eliminarReserva_Click"/>
         </Border>
-        <Border x:Name="border_editarArtista" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
-            <Button x:Name="button_editarArtista" Content="Editar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
-        </Border>
+        <ComboBox x:Name="combobox_usuario" HorizontalAlignment="Left" Margin="219,108,0,0" VerticalAlignment="Top" Width="247"/>
+        <ComboBox x:Name="combobox_vinilo" HorizontalAlignment="Left" Margin="503,108,0,0" VerticalAlignment="Top" Width="251"/>
+        <Label x:Name="label_usuario" Content="Usuario&#xD;&#xA;" HorizontalAlignment="Left" Margin="219,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_vinilo" Content="Vinilo" HorizontalAlignment="Left" Margin="503,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_fechaLanzamiento_Copiar" Content="Fecha Entrega Prevista" HorizontalAlignment="Left" Margin="219,158,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datepicker_fechaLanzamiento_Copiar" HorizontalAlignment="Left" Margin="219,184,0,0" VerticalAlignment="Top" Width="247"/>
 
     </Grid>
 </Window>

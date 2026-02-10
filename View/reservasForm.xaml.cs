@@ -17,24 +17,24 @@ namespace View
     /// <summary>
     /// Lógica de interacción para reservas.xaml
     /// </summary>
-    public partial class artistas : Window
+    public partial class reservasForm : Window
     {
-        public artistas()
+        public reservasForm()
         {
             InitializeComponent();
-        }
-
-        private void button_reservas_Click(object sender, RoutedEventArgs e)
-        {
-            reservas reservas = new reservas();
-            reservas.Show();
-            this.Close();
         }
 
         private void button_vinilos_Click(object sender, RoutedEventArgs e)
         {
             Vinilos vinilos = new Vinilos();
             vinilos.Show();
+            this.Close();
+        }
+
+        private void button_artistas_Click(object sender, RoutedEventArgs e)
+        {
+            artistas artistas = new artistas();
+            artistas.Show();
             this.Close();
         }
 
@@ -52,10 +52,10 @@ namespace View
             this.Close();
         }
 
-        private void button_nuevoArtista_Click(object sender, RoutedEventArgs e)
+        private void button_eliminarReserva_Click(object sender, RoutedEventArgs e)
         {
-            artistasForm artistasForm = new artistasForm();
-            artistasForm.Show();
+            reservas reservas = new reservas();
+            reservas.Show();
             this.Close();
         }
     }

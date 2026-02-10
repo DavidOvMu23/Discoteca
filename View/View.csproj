@@ -61,14 +61,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="artistasForm.xaml.cs">
+      <DependentUpon>artistasForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="generosForm.xaml.cs">
+      <DependentUpon>generosForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="generos.xaml.cs">
       <DependentUpon>generos.xaml</DependentUpon>
     </Compile>
     <Compile Include="artistas.xaml.cs">
       <DependentUpon>artistas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="reservasForm.xaml.cs">
+      <DependentUpon>reservasForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="usuariosForm.xaml.cs">
+      <DependentUpon>usuariosForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="usuarios.xaml.cs">
       <DependentUpon>usuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vinilosForm.xaml.cs">
+      <DependentUpon>vinilosForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="vinilos.xaml.cs">
       <DependentUpon>vinilos.xaml</DependentUpon>
@@ -105,6 +120,14 @@
     <Resource Include="discoteca.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="artistasForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="generosForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="generos.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -113,7 +136,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="reservasForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="usuariosForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="usuarios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="vinilosForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
