@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,16 +18,39 @@ namespace View
     /// <summary>
     /// Lógica de interacción para reservas.xaml
     /// </summary>
-    public partial class vinilos : Window
+    public partial class Vinilos : Window
     {
-        public vinilos()
+        public Vinilos()
         {
             InitializeComponent();
         }
 
-        private void button_discos1_Click(object sender, RoutedEventArgs e)
+        private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
+            reservas reservas = new reservas();
+            reservas.Show();
+            this.Close();
+        }
 
+        private void button_artistas_Click(object sender, RoutedEventArgs e)
+        {
+            artistas artistas = new artistas();
+            artistas.Show();
+            this.Close();
+        }
+
+        private void button_generos_Click(object sender, RoutedEventArgs e)
+        {
+            generos generos = new generos();
+            generos.Show();
+            this.Close();
+        }
+
+        private void button_usuarios_Click(object sender, RoutedEventArgs e)
+        {
+            usuarios usuarios = new usuarios();
+            usuarios.Show();
+            this.Close();
         }
     }
 }

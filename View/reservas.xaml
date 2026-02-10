@@ -17,16 +17,16 @@
 
         <StackPanel x:Name="stackpanel_menu" Orientation="Vertical" HorizontalAlignment="Left" Margin="31,82,0,0" VerticalAlignment="Top" Width="135">
             <Border x:Name="border_vinilos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_vinilos" Content="Vinilos" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button x:Name="button_vinilos" Content="Vinilos" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_vinilos_Click"/>
             </Border>
             <Border x:Name="border_artistas" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_artistas" Content="Artistas" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button x:Name="button_artistas" Content="Artistas" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_artistas_Click"/>
             </Border>
             <Border x:Name="border_generos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_generos" Content="Géneros" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button x:Name="button_generos" Content="Géneros" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_generos_Click"/>
             </Border>
             <Border x:Name="border_usuarios" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
         <DataGrid x:Name="datagrid_reservas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>

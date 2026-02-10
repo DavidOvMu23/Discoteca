@@ -24,14 +24,32 @@ namespace View
             InitializeComponent();
         }
 
-        private void button_discos1_Click(object sender, RoutedEventArgs e)
+        private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
+            reservas reservas = new reservas();
+            reservas.Show();
+            this.Close();
+        }
 
+        private void button_vinilos_Click(object sender, RoutedEventArgs e)
+        {
+            Vinilos vinilos = new Vinilos();
+            vinilos.Show();
+            this.Close();
         }
 
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
+            artistas artistas = new artistas();
+            artistas.Show();
+            this.Close();
+        }
 
+        private void button_usuarios_Click(object sender, RoutedEventArgs e)
+        {
+            usuarios usuarios = new usuarios();
+            usuarios.Show();
+            this.Close();
         }
     }
 }
