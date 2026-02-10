@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace View
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para reservas.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class usuarios : Window
     {
-        public MainWindow()
+        public usuarios()
         {
             InitializeComponent();
+        }
+
+        private void button_discos1_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
