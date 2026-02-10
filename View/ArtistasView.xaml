@@ -29,15 +29,16 @@
                 <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
+        <DataGrid x:Name="datagrid_artistas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
+                  SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True"/>
         <Border x:Name="border_nuevoArtista" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
             <Button x:Name="button_nuevoArtista" Content="Nuevo Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoArtista_Click"/>
         </Border>
         <Border x:Name="border_eliminarArtista" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
-            <Button x:Name="button_eliminarArtista" Content="Eliminar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_eliminarArtista" Content="Eliminar Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_eliminarArtista_Click"/>
         </Border>
         <Border x:Name="border_editarArtista" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
-            <Button x:Name="button_editarArtista" Content="Editar Artista" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_editarArtista" Content="Editar Artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_editarArtista_Click"/>
         </Border>
 
     </Grid>

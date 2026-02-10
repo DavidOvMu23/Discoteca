@@ -35,8 +35,8 @@
         <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>
         </Border>
-        <TextBox x:Name="textbox_nombre" HorizontalAlignment="Left" Margin="224,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
-        <TextBox x:Name="textbox_nacionalidad" HorizontalAlignment="Left" Margin="224,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_nombre" HorizontalAlignment="Left" Margin="224,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_nacionalidad" HorizontalAlignment="Left" Margin="224,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310" Height="29"/>
         <Label x:Name="label_nombre" Content="Nombre" HorizontalAlignment="Left" Margin="224,79,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_nacionalidad" Content="Nacionalidad" HorizontalAlignment="Left" Margin="224,149,0,0" VerticalAlignment="Top"/>
 

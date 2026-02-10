@@ -36,11 +36,11 @@
             <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>
         </Border>
         <Label x:Name="label_nombre" Content="Nombre" HorizontalAlignment="Left" Margin="224,82,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textbox_nombre" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_nombre" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310" Height="29"/>
         <Label x:Name="label_email" Content="Email" HorizontalAlignment="Left" Margin="224,144,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textbox_email" HorizontalAlignment="Left" Margin="224,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_email" HorizontalAlignment="Left" Margin="224,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310" Height="29"/>
         <Label x:Name="label_telefono" Content="Telefono" HorizontalAlignment="Left" Margin="224,0,0,0" VerticalAlignment="Center"/>
-        <TextBox x:Name="textbox_telefono" HorizontalAlignment="Left" Margin="224,241,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="29"/>
+        <TextBox x:Name="textbox_telefono" HorizontalAlignment="Left" Margin="224,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310" Height="29"/>
 
     </Grid>
 </Window>

@@ -93,6 +93,7 @@
     <Compile Include="AlquileresModel.cs" />
     <Compile Include="ArtistasModel.cs" />
     <Compile Include="GenerosModel.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="UsuariosModel.cs" />
     <Compile Include="VinilosModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

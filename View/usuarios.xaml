@@ -29,7 +29,8 @@
                 <Button x:Name="button_vinilos" Content="Vinilos" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_vinilos_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
+        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
+                  SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True"/>
         <Border x:Name="border_nuevoUsuario" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
             <Button x:Name="button_nuevoUsuario" Content="Nuevo Usuario" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoUsuario_Click"/>
         </Border>

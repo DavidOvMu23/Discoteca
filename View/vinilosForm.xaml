@@ -35,11 +35,11 @@
         <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>
         </Border>
-        <TextBox x:Name="textbox_titulo" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="247" Height="25"/>
+        <TextBox x:Name="textbox_titulo" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Height="25"/>
         <Label x:Name="label_titulo" Content="Titulo" HorizontalAlignment="Left" Margin="224,82,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="datepicker_fechaLanzamiento" HorizontalAlignment="Left" Margin="508,108,0,0" VerticalAlignment="Top" Width="254"/>
         <Label x:Name="label_fechaLanzamiento" Content="Fecha Lanzamiento" HorizontalAlignment="Left" Margin="508,82,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textbox_estado" HorizontalAlignment="Left" Margin="224,180,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="247" Height="25"/>
+        <TextBox x:Name="textbox_estado" HorizontalAlignment="Left" Margin="224,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Height="25"/>
         <Label x:Name="label_estado" Content="Estado" HorizontalAlignment="Left" Margin="224,154,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="combobox_artista" HorizontalAlignment="Left" Margin="512,183,0,0" VerticalAlignment="Top" Width="247"/>
         <ComboBox x:Name="combobox_genero" HorizontalAlignment="Left" Margin="224,253,0,0" VerticalAlignment="Top" Width="251"/>
