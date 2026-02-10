@@ -31,7 +31,7 @@
         </StackPanel>
         <DataGrid x:Name="datagrid_reservas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
         <Border x:Name="border_nuevaReserva" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_nuevaReserva" Content="Nueva Reserva" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_nuevaReserva" Content="Nueva Reserva" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevaReserva_Click"/>
         </Border>
         <Border x:Name="border_eliminarReserva" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_eliminarReserva" Content="Eliminar Reserva" Background="Transparent" BorderThickness="0" Foreground="White"/>

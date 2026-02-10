@@ -51,5 +51,12 @@ namespace View
             vinilos.Show();
             this.Close();
         }
+
+        private void button_nuevoUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            usuariosForm usuariosForm = new usuariosForm();
+            usuariosForm.Show();
+            this.Close();
+        }
     }
 }

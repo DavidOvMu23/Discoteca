@@ -51,5 +51,12 @@ namespace View
             usuarios.Show();
             this.Close();
         }
+
+        private void button_nuevaReserva_Click(object sender, RoutedEventArgs e)
+        {
+            reservasForm reservasForm = new reservasForm();
+            reservasForm.Show();
+            this.Close();
+        }
     }
 }

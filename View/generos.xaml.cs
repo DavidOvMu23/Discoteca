@@ -51,5 +51,12 @@ namespace View
             usuarios.Show();
             this.Close();
         }
+
+        private void button_nuevoGenero_Click(object sender, RoutedEventArgs e)
+        {
+            generosForm generosForm = new generosForm();
+            generosForm.Show();
+            this.Close();
+        }
     }
 }

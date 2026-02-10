@@ -31,7 +31,7 @@
         </StackPanel>
         <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"/>
         <Border x:Name="border_nuevoGenero" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_nuevoGenero" Content="Nuevo Genero" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_nuevoGenero" Content="Nuevo Genero" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoGenero_Click"/>
         </Border>
         <Border x:Name="border_eliminarGenero" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_eliminarGenero" Content="Eliminar Genero" Background="Transparent" BorderThickness="0" Foreground="White"/>

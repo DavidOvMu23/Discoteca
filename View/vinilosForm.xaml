@@ -30,21 +30,21 @@
             </Border>
         </StackPanel>
         <Border x:Name="border_guardar" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_guardar" Content="Guardar" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_guardar" Content="Guardar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_guardar_Click"/>
         </Border>
         <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>
         </Border>
-        <TextBox x:Name="textbox_titulo" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="25"/>
+        <TextBox x:Name="textbox_titulo" HorizontalAlignment="Left" Margin="224,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="247" Height="25"/>
         <Label x:Name="label_titulo" Content="Titulo" HorizontalAlignment="Left" Margin="224,82,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="datepicker_fechaLanzamiento" HorizontalAlignment="Left" Margin="578,108,0,0" VerticalAlignment="Top" Width="184"/>
-        <Label x:Name="label_fechaLanzamiento" Content="Fecha Lanzamiento" HorizontalAlignment="Left" Margin="578,82,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textbox_estado" HorizontalAlignment="Left" Margin="224,180,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" Height="25"/>
+        <DatePicker x:Name="datepicker_fechaLanzamiento" HorizontalAlignment="Left" Margin="508,108,0,0" VerticalAlignment="Top" Width="254"/>
+        <Label x:Name="label_fechaLanzamiento" Content="Fecha Lanzamiento" HorizontalAlignment="Left" Margin="508,82,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_estado" HorizontalAlignment="Left" Margin="224,180,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="247" Height="25"/>
         <Label x:Name="label_estado" Content="Estado" HorizontalAlignment="Left" Margin="224,154,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="combobox_artista" HorizontalAlignment="Left" Margin="224,253,0,0" VerticalAlignment="Top" Width="247"/>
-        <ComboBox x:Name="combobox_genero" HorizontalAlignment="Left" Margin="508,253,0,0" VerticalAlignment="Top" Width="251"/>
-        <Label x:Name="label_artista" Content="Artista" HorizontalAlignment="Left" Margin="224,232,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_genero" Content="Genero" HorizontalAlignment="Left" Margin="508,227,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="combobox_artista" HorizontalAlignment="Left" Margin="512,183,0,0" VerticalAlignment="Top" Width="247"/>
+        <ComboBox x:Name="combobox_genero" HorizontalAlignment="Left" Margin="224,253,0,0" VerticalAlignment="Top" Width="251"/>
+        <Label x:Name="label_artista" Content="Artista" HorizontalAlignment="Left" Margin="512,162,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_genero" Content="Genero" HorizontalAlignment="Left" Margin="224,227,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

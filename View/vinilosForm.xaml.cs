@@ -59,5 +59,10 @@ namespace View
             vinilos.Show();
             this.Close();
         }
+
+        private void button_guardar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
