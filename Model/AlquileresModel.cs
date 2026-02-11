@@ -76,5 +76,21 @@ namespace Model
                 cmd.ExecuteNonQuery();
             }
         }
+
+        // Metodo para la prueba de integración de conexión a la base de datos
+        public bool PruebaConexion()
+        {
+            try
+            {
+                var conn = new MySqlConnection(cadena);
+                conn.Open();
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }
