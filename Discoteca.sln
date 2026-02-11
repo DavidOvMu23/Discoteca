@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{0535C908-DF19-488D-9A72-511F6E0A65F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{12102D49-9DD3-4BD7-A210-85616C28A312}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Test\Testing.csproj", "{12102D49-9DD3-4BD7-A210-85616C28A312}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
