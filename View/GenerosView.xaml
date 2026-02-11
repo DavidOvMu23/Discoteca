@@ -1,13 +1,13 @@
-﻿<Window x:Class="View.ReservasView"
+﻿<Window x:Class="View.GenerosView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="Reservas" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight">
+        Title="Generos" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF9F7F2">
-        <Label x:Name="label_tituloPagina" Content="Reservas" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
+        <Label x:Name="label_tituloPagina" Content="Generos&#xA;" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
         <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect Color="#80000000" BlurRadius="12" ShadowDepth="0" Opacity="0.65"/>
@@ -16,29 +16,29 @@
         <Image x:Name="titulo" HorizontalAlignment="Left" Height="189" Margin="16,-43,0,0" VerticalAlignment="Top" Width="164" Source="/titulo.png"/>
 
         <StackPanel x:Name="stackpanel_menu" Orientation="Vertical" HorizontalAlignment="Left" Margin="31,82,0,0" VerticalAlignment="Top" Width="135">
+            <Border x:Name="border_reservas" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
+                <Button x:Name="button_reservas" Content="Reservas" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_reservas_Click"/>
+            </Border>
             <Border x:Name="border_vinilos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
                 <Button x:Name="button_vinilos" Content="Vinilos" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_vinilos_Click"/>
             </Border>
             <Border x:Name="border_artistas" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
                 <Button x:Name="button_artistas" Content="Artistas" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_artistas_Click"/>
             </Border>
-            <Border x:Name="border_generos" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
-                <Button x:Name="button_generos" Content="Géneros" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_generos_Click"/>
-            </Border>
             <Border x:Name="border_usuarios" CornerRadius="8" Background="#FFFF6B6B" Height="36" Margin="0,0,0,8">
                 <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_reservas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
+        <DataGrid x:Name="datagrid_generos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
                   SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True"/>
-        <Border x:Name="border_nuevaReserva" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_nuevaReserva" Content="Nueva Reserva" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevaReserva_Click"/>
+        <Border x:Name="border_nuevoGenero" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
+            <Button x:Name="button_nuevoGenero" Content="Nuevo Genero" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoGenero_Click" HorizontalAlignment="Right" Width="135"/>
         </Border>
-        <Border x:Name="border_eliminarReserva" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
-            <Button x:Name="button_eliminarReserva" Content="Eliminar Reserva" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_eliminarGenero" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
+            <Button x:Name="button_eliminarGenero" Content="Eliminar Genero" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_eliminarGenero_Click"/>
         </Border>
-        <Border x:Name="border_editarReserva" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
-            <Button x:Name="button_editarReserva" Content="Editar Reserva" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_editarGenero" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
+            <Button x:Name="button_editarGenero" Content="Editar Genero" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_editarGenero_Click"/>
         </Border>
 
     </Grid>

@@ -1,6 +1,7 @@
 ﻿using Controller;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,58 +16,57 @@ using System.Windows.Shapes;
 
 namespace View
 {
-    /// <summary>
-    /// Lógica de interacción para reservas.xaml
-    /// </summary>
-    public partial class GenerosForm : Window
+    public partial class GenerosView : Window
     {
         private GenerosController _controller;
-        private int? idGenero = null; //lo del ? es para que pueda ser null, porque al crear un nuevo género no tenemos id
-        
-        public GenerosForm()
+        public GenerosView()
         {
             InitializeComponent();
             _controller = new GenerosController();
-            idGenero = null;
+            CargarGeneros();
 
-            label_tituloPagina.Content = "Nuevo Género";
+        }
+        private void CargarGeneros()
+        {
+            DataTable dt = _controller.ObtenerListadoGeneros();
+            datagrid_generos.ItemsSource = dt.DefaultView;
         }
 
-        public GenerosForm(int id, string nombre)
+        private void button_eliminarGenero_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
-            _controller = new GenerosController();
-            idGenero = id;
-            textbox_nombre.Text = nombre;
-
-            label_tituloPagina.Content = "Editar Género";
-        }
-
-        private void button_guardar_Click(object sender, RoutedEventArgs e)
-        {
-            string nombre = textbox_nombre.Text;
-
-            if(idGenero == null)
+            DataRowView row = datagrid_generos.SelectedItem as DataRowView;
+            if (row != null)
             {
-                // Crear
-                _controller.CrearGenero(nombre);
-                MessageBox.Show("Género creado correctamente.");
-                
-                GenerosView generosView = new GenerosView();
-                generosView.Show();
+                int id = (int)row["id_genero"];
+                if (_controller.EliminarGenero(id))
+                {
+                    MessageBox.Show("Género eliminado correctamente.");
+                    CargarGeneros();
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar el género.");
+                }
+            }
+        }
+        private void button_editarGenero_Click(object sender, RoutedEventArgs e)
+        {
+            DataRowView row = datagrid_generos.SelectedItem as DataRowView;
+            if (row != null)
+            {
+                int id = (int)row["id_genero"];
+                string nombre = row["nombre_genero"].ToString();
+                GenerosForm form = new GenerosForm(id, nombre);
+                form.Show();
                 this.Close();
             }
             else
             {
-                // Editar
-                _controller.EditarGenero(idGenero.Value, nombre);
-                MessageBox.Show("Género editado correctamente.");
-                
-                GenerosView generosView = new GenerosView();
-                generosView.Show();
-                this.Close();
+                MessageBox.Show("Seleccione un género para editar.");
             }
         }
+
+        
 
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
@@ -96,10 +96,10 @@ namespace View
             this.Close();
         }
 
-        private void button_cancelar_Click(object sender, RoutedEventArgs e)
+        private void button_nuevoGenero_Click(object sender, RoutedEventArgs e)
         {
-            GenerosView generos = new GenerosView();
-            generos.Show();
+            GenerosForm generosForm = new GenerosForm();
+            generosForm.Show();
             this.Close();
         }
     }

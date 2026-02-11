@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="Usuarios" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight">
+        Title="Usuarios" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF9F7F2">
         <Label x:Name="label_tituloPagina" Content="Usuarios" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
         <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
@@ -30,7 +30,7 @@
             </Border>
         </StackPanel>
         <Border x:Name="border_guardar" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
-            <Button x:Name="button_guardar" Content="Guardar Usuario" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="button_guardar" Content="Guardar Usuario" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_guardar_Click"/>
         </Border>
         <Border x:Name="border_cancelar" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
             <Button x:Name="button_cancelar" Content="Cancelar" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_cancelar_Click"/>

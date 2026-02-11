@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace Controller
 {
-    internal class UsuariosController
+    public class UsuariosController
     {
         private UsuariosModel _model;
 

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Controller;
 
 namespace View
 {
@@ -19,10 +20,58 @@ namespace View
     /// </summary>
     public partial class UsuariosForm : Window
     {
+        private UsuariosController _controller;
+        private int? idUsuario = null; //lo del ? es para que pueda ser null, porque al crear un nuevo usuario no tenemos id
+
         public UsuariosForm()
         {
             InitializeComponent();
+            _controller = new UsuariosController();
+            idUsuario = null;
+
+            label_tituloPagina.Content = "Nuevo Usuario";
         }
+
+        public UsuariosForm(int id, string nombre, string email, string telefono)
+        {
+            InitializeComponent();
+            _controller = new UsuariosController();
+            idUsuario = id;
+            textbox_nombre.Text = nombre;
+            textbox_email.Text = email;
+            textbox_telefono.Text = telefono;
+
+            label_tituloPagina.Content = "Editar Usuario";
+        }
+
+        private void button_guardar_Click(object sender, RoutedEventArgs e)
+        {
+            string nombre = textbox_nombre.Text;
+            string email = textbox_email.Text;
+            string telefono = textbox_telefono.Text;
+
+            if (idUsuario == null)
+            {
+                // Crear
+                _controller.CrearUsuario(nombre, email, telefono);
+                MessageBox.Show("Usuario creado correctamente.");
+                
+                UsuariosView usuariosView = new UsuariosView();
+                usuariosView.Show();
+                this.Close();
+            }
+            else
+            {
+                // Editar
+                _controller.EditarUsuario(idUsuario.Value, nombre, email, telefono);
+                MessageBox.Show("Usuario editado correctamente.");
+                
+                UsuariosView usuariosView = new UsuariosView();
+                usuariosView.Show();
+                this.Close();
+            }
+        }
+
 
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {

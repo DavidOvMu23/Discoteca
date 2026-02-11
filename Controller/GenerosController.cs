@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    internal class GenerosController
+    public class GenerosController
     {
         private GenerosModel _model;
 

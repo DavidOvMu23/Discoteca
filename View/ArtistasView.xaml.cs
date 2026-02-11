@@ -91,10 +91,5 @@ namespace View
             artistasForm.Show();
             this.Close();
         }
-
-        private void datagrid_artistas_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

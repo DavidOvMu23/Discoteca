@@ -67,32 +67,32 @@
     <Compile Include="ArtistasForm.xaml.cs">
       <DependentUpon>ArtistasForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="generosForm.xaml.cs">
-      <DependentUpon>generosForm.xaml</DependentUpon>
+    <Compile Include="GenerosForm.xaml.cs">
+      <DependentUpon>GenerosForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="generos.xaml.cs">
-      <DependentUpon>generos.xaml</DependentUpon>
+    <Compile Include="GenerosView.xaml.cs">
+      <DependentUpon>GenerosView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ArtistasView.xaml.cs">
       <DependentUpon>ArtistasView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="reservasForm.xaml.cs">
-      <DependentUpon>reservasForm.xaml</DependentUpon>
+    <Compile Include="ReservasForm.xaml.cs">
+      <DependentUpon>ReservasForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="usuariosForm.xaml.cs">
-      <DependentUpon>usuariosForm.xaml</DependentUpon>
+    <Compile Include="UsuariosForm.xaml.cs">
+      <DependentUpon>UsuariosForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="usuarios.xaml.cs">
-      <DependentUpon>usuarios.xaml</DependentUpon>
+    <Compile Include="UsuariosView.xaml.cs">
+      <DependentUpon>UsuariosView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="vinilosForm.xaml.cs">
-      <DependentUpon>vinilosForm.xaml</DependentUpon>
+    <Compile Include="VinilosForm.xaml.cs">
+      <DependentUpon>VinilosForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="vinilos.xaml.cs">
-      <DependentUpon>vinilos.xaml</DependentUpon>
+    <Compile Include="VinilosView.xaml.cs">
+      <DependentUpon>VinilosView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="reservas.xaml.cs">
-      <DependentUpon>reservas.xaml</DependentUpon>
+    <Compile Include="ReservasView.xaml.cs">
+      <DependentUpon>ReservasView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -124,11 +124,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="generosForm.xaml">
+    <Page Include="GenerosForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="generos.xaml">
+    <Page Include="GenerosView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -136,27 +136,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="reservasForm.xaml">
+    <Page Include="ReservasForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="usuariosForm.xaml">
+    <Page Include="UsuariosForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="usuarios.xaml">
+    <Page Include="UsuariosView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="vinilosForm.xaml">
+    <Page Include="VinilosForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="vinilos.xaml">
+    <Page Include="VinilosView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="reservas.xaml">
+    <Page Include="ReservasView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
