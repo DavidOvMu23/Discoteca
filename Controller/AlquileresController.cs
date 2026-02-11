@@ -36,7 +36,7 @@ namespace Controller
         }
 
         //Editar alquiler
-        public bool EditarAlquiler(int idAlquiler, int idUsuario, int idVinilo, DateTime fechaSalida, DateTime fechaEntregaPrevista, DateTime fechaDevolucionReal)
+        public bool EditarAlquiler(int idAlquiler, int idUsuario, int idVinilo, DateTime fechaSalida, DateTime fechaEntregaPrevista, DateTime? fechaDevolucionReal)
         {
             if (fechaSalida > fechaEntregaPrevista)
             {

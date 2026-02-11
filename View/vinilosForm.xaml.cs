@@ -45,8 +45,8 @@ namespace View
             _controller = new VinilosController();
             _artistasController = new ArtistasController();
             _generosController = new GenerosController();
-
             idVinilo = id;
+
             textbox_titulo.Text = titulo;
             datepicker_fechaLanzamiento.SelectedDate = new DateTime(anio, 1, 1);
             textbox_estado.Text = estado;
