@@ -69,8 +69,8 @@ namespace View
         {
             var dtUsuarios = _usuariosController.ObtenerListadoUsuarios();
             combobox_usuario.ItemsSource = dtUsuarios.DefaultView;
-            combobox_usuario.DisplayMemberPath = "nombre";
-            combobox_usuario.SelectedValuePath = "id_usuario";
+            combobox_usuario.DisplayMemberPath = "nombre"; // si no pongo esto no sale el nombre si no que muestra algo como System.Data.DataRowView
+            combobox_usuario.SelectedValuePath = "id_usuario"; // si no pongo esto da error
 
             var dtVinilos = _vinilosController.ObtenerListadoVinilos();
             combobox_vinilo.ItemsSource = dtVinilos.DefaultView;

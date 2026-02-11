@@ -65,6 +65,10 @@ namespace View
                 UsuariosForm form = new UsuariosForm(id, nombre, email, telefono);
                 form.Show();
             }
+            else
+            {
+                MessageBox.Show("Seleccione un usuario para editar.");
+            }
         }
 
         private void button_reservas_Click(object sender, RoutedEventArgs e)

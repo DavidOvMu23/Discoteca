@@ -69,6 +69,10 @@ namespace View
                 vinilosForm.Show();
                 this.Close();
             }
+            else
+            {
+                MessageBox.Show("Seleccione un vinilo para editar.");
+            }
         }
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {

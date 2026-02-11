@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Artistas" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF9F7F2">
-        <Label x:Name="label_tituloPagina" Content="Artistas&#xD;&#xA;" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
+        <Label x:Name="label_tituloPagina" Content="Artistas&#xD;&#xA;" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="206" FontSize="20"/>
         <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect Color="#80000000" BlurRadius="12" ShadowDepth="0" Opacity="0.65"/>
