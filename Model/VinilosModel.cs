@@ -27,32 +27,36 @@ namespace Model
         }
 
         // Insertar vinilo
-        public void InsertarVinilo(string titulo, int anio, string estado)
+        public void InsertarVinilo(string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "INSERT INTO VINILOS (titulo, anio_lanzamiento, estado) VALUES (@titulo, @anio, @estado)";
+                string sql = "INSERT INTO VINILOS (titulo, anio_lanzamiento, estado, id_artista, id_genero) VALUES (@titulo, @anio, @estado, @idArtista, @idGenero)";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@titulo", titulo);
                 cmd.Parameters.AddWithValue("@anio", anio);
                 cmd.Parameters.AddWithValue("@estado", estado);
+                cmd.Parameters.AddWithValue("@idArtista", idArtista);
+                cmd.Parameters.AddWithValue("@idGenero", idGenero);
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
         }
 
         // Actualizar vinilo
-        public void ActualizarVinilo(int id, string titulo, int anio, string estado)
+        public void ActualizarVinilo(int id, string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "UPDATE VINILOS SET titulo = @titulo, anio_lanzamiento = @anio, estado = @estado WHERE id_vinilo = @id";
+                string sql = "UPDATE VINILOS SET titulo = @titulo, anio_lanzamiento = @anio, estado = @estado, id_artista = @idArtista, id_genero = @idGenero WHERE id_vinilo = @id";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@titulo", titulo);
                 cmd.Parameters.AddWithValue("@anio", anio);
                 cmd.Parameters.AddWithValue("@estado", estado);
+                cmd.Parameters.AddWithValue("@idArtista", idArtista);
+                cmd.Parameters.AddWithValue("@idGenero", idGenero);
                 cmd.Parameters.AddWithValue("@id", id);
                 conn.Open();
                 cmd.ExecuteNonQuery();

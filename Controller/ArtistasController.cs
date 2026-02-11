@@ -23,7 +23,11 @@ namespace Controller
         // Crear Artista
         public bool CrearArtista(string nombre, string nacionalidad)
         {
-            if (string.IsNullOrWhiteSpace(nombre)) throw new Exception("El nombre es obligatorio");
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                // lo tengo que hacer así en vez de usar un meesage box por que esta capa del programa no tiene acceso a la view
+                throw new Exception("El nombre es obligatorio");
+            }
 
             _model.InsertarArtista(nombre, nacionalidad);
             return true;
@@ -32,7 +36,10 @@ namespace Controller
         // Editar Artista
         public bool EditarArtista(int id, string nombre, string nacionalidad)
         {
-            if (string.IsNullOrWhiteSpace(nombre)) throw new Exception("El nombre es obligatorio");
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                throw new Exception("El nombre es obligatorio");
+            }
 
             _model.ActualizarArtista(id, nombre, nacionalidad);
             return true;

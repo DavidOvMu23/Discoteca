@@ -24,16 +24,17 @@ namespace Model
         }
 
         // Crear usuario
-        public void InsertarUsuario(string nombre, string email, string telefono)
+        public void InsertarUsuario(string nombre, string email, string telefono, DateTime fechaRegistro)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
             {
-                string sql = "INSERT INTO USUARIOS (nombre, email, telefono) VALUES (@nombre, @email, @telefono)";
+                string sql = "INSERT INTO USUARIOS (nombre, email, telefono, fecha_registro) VALUES (@nombre, @email, @telefono, @fecha)";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@nombre", nombre);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@telefono", telefono);
+                cmd.Parameters.AddWithValue("@fecha", fechaRegistro);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();

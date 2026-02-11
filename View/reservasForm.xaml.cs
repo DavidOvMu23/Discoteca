@@ -58,5 +58,10 @@ namespace View
             reservas.Show();
             this.Close();
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
