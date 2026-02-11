@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    internal class AlquileresController
+    public class AlquileresController
     {
         private AlquileresModel _model;
 

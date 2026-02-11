@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Controller;
 
 namespace View
 {
@@ -19,9 +21,18 @@ namespace View
     /// </summary>
     public partial class ReservasView : Window
     {
+        private AlquileresController _controller;
         public ReservasView()
         {
             InitializeComponent();
+            _controller = new AlquileresController();
+            CargarReservas();
+        }
+
+        private void CargarReservas()
+        {
+            DataTable dt = _controller.ObtenerListado();
+            datagrid_reservas.ItemsSource = dt.DefaultView;
         }
 
         private void button_vinilos_Click(object sender, RoutedEventArgs e)

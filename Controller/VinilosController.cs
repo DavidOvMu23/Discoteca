@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    internal class VinilosController
+    public class VinilosController
     {
         private VinilosModel _model;
 

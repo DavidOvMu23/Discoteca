@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="Vinilos" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+        Title="Vinilos" MinHeight="470" MinWidth="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Height="394">
     <Grid Background="#FFF9F7F2">
         <Label x:Name="label_tituloPagina" Content="Vinilos" HorizontalAlignment="Left" Margin="450,20,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="20"/>
-        <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
+        <Rectangle x:Name="menu_lateral" HorizontalAlignment="Left" Height="434" Margin="10,0,0,0" VerticalAlignment="Center" Width="176" RadiusX="10" RadiusY="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect Color="#80000000" BlurRadius="12" ShadowDepth="0" Opacity="0.65"/>
             </Rectangle.Effect>
@@ -31,14 +31,14 @@
         </StackPanel>
         <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
                   SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True"/>
-        <Border x:Name="border_nuevoVinilo" CornerRadius="8" Background="#FF7FD05B" Margin="224,388,441,10">
+        <Border x:Name="border_nuevoVinilo" CornerRadius="8" Background="#FF7FD05B" Margin="224,407,441,10">
             <Button x:Name="button_nuevoVinilo" Content="Nuevo Vinilo" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoVinilo_Click"/>
         </Border>
-        <Border x:Name="border_eliminarVinilo" CornerRadius="8" Background="#FFFF6B6B" Margin="627,388,38,10">
-            <Button x:Name="button_eliminarVinilo" Content="Eliminar Vinilo" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_eliminarVinilo" CornerRadius="8" Background="#FFFF6B6B" Margin="627,407,38,10">
+            <Button x:Name="button_eliminarVinilo" Content="Eliminar Vinilo" Background="Transparent" BorderThickness="0" Foreground="White" Height="37" VerticalAlignment="Center" Click="button_eliminarVinilo_Click"/>
         </Border>
-        <Border x:Name="border_editarVinilo" CornerRadius="8" Background="#FFDCB857" Margin="426,388,240,10">
-            <Button x:Name="button_editarVinilo" Content="Editar Vinilo" Background="Transparent" BorderThickness="0" Foreground="White"/>
+        <Border x:Name="border_editarVinilo" CornerRadius="8" Background="#FFDCB857" Margin="426,407,240,10">
+            <Button x:Name="button_editarVinilo" Content="Editar Vinilo" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_editarVinilo_Click"/>
         </Border>
 
     </Grid>
