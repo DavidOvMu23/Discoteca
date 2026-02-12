@@ -1,0 +1,103 @@
+\doxysection{Controller.\+Generos\+Controller Class Reference}
+\hypertarget{class_controller_1_1_generos_controller}{}\label{class_controller_1_1_generos_controller}\index{Controller.GenerosController@{Controller.GenerosController}}
+
+
+Lógica de negocio para géneros.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_controller_1_1_generos_controller_a899a362092ddc76333d074b453689f65}\label{class_controller_1_1_generos_controller_a899a362092ddc76333d074b453689f65} 
+{\bfseries Generos\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el controlador de géneros. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_generos_controller_af356e9fe830b3b06705d9ff244fe5f0f}{Obtener\+Listado\+Generos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el listado de géneros. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_generos_controller_a3e6d4a8207ccb42b0465d7f0e723c828}{Crear\+Genero}} (string nombre)
+\begin{DoxyCompactList}\small\item\em Crea un género nuevo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_generos_controller_afefcd24ba9527d35bf861ef2b92c0400}{Editar\+Genero}} (int id, string nombre)
+\begin{DoxyCompactList}\small\item\em Edita un género existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_generos_controller_aaa6b7dacd4f95c456ba8f083ba7c2f8e}{Eliminar\+Genero}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un género por id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lógica de negocio para géneros. 
+
+\label{doc-func-members}
+\Hypertarget{class_controller_1_1_generos_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_1_1_generos_controller_a3e6d4a8207ccb42b0465d7f0e723c828}\index{Controller.GenerosController@{Controller.GenerosController}!CrearGenero@{CrearGenero}}
+\index{CrearGenero@{CrearGenero}!Controller.GenerosController@{Controller.GenerosController}}
+\doxysubsubsection{\texorpdfstring{CrearGenero()}{CrearGenero()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_generos_controller_a3e6d4a8207ccb42b0465d7f0e723c828} 
+bool Controller.\+Generos\+Controller.\+Crear\+Genero (\begin{DoxyParamCaption}\item[{string}]{nombre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un género nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del género.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se crea correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_generos_controller_afefcd24ba9527d35bf861ef2b92c0400}\index{Controller.GenerosController@{Controller.GenerosController}!EditarGenero@{EditarGenero}}
+\index{EditarGenero@{EditarGenero}!Controller.GenerosController@{Controller.GenerosController}}
+\doxysubsubsection{\texorpdfstring{EditarGenero()}{EditarGenero()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_generos_controller_afefcd24ba9527d35bf861ef2b92c0400} 
+bool Controller.\+Generos\+Controller.\+Editar\+Genero (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{nombre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un género existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del género.\\
+\hline
+{\em nombre} & Nombre del género.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se actualiza correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_generos_controller_aaa6b7dacd4f95c456ba8f083ba7c2f8e}\index{Controller.GenerosController@{Controller.GenerosController}!EliminarGenero@{EliminarGenero}}
+\index{EliminarGenero@{EliminarGenero}!Controller.GenerosController@{Controller.GenerosController}}
+\doxysubsubsection{\texorpdfstring{EliminarGenero()}{EliminarGenero()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_generos_controller_aaa6b7dacd4f95c456ba8f083ba7c2f8e} 
+bool Controller.\+Generos\+Controller.\+Eliminar\+Genero (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un género por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del género.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se elimina correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_generos_controller_af356e9fe830b3b06705d9ff244fe5f0f}\index{Controller.GenerosController@{Controller.GenerosController}!ObtenerListadoGeneros@{ObtenerListadoGeneros}}
+\index{ObtenerListadoGeneros@{ObtenerListadoGeneros}!Controller.GenerosController@{Controller.GenerosController}}
+\doxysubsubsection{\texorpdfstring{ObtenerListadoGeneros()}{ObtenerListadoGeneros()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_generos_controller_af356e9fe830b3b06705d9ff244fe5f0f} 
+Data\+Table Controller.\+Generos\+Controller.\+Obtener\+Listado\+Generos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el listado de géneros. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los géneros.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Controller/\+Generos\+Controller.\+cs\end{DoxyCompactItemize}

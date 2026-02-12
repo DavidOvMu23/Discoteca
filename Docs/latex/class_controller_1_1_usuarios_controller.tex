@@ -1,0 +1,111 @@
+\doxysection{Controller.\+Usuarios\+Controller Class Reference}
+\hypertarget{class_controller_1_1_usuarios_controller}{}\label{class_controller_1_1_usuarios_controller}\index{Controller.UsuariosController@{Controller.UsuariosController}}
+
+
+Lógica de negocio para usuarios.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_controller_1_1_usuarios_controller_a2c1b0ccbaea37cf5983493f488ee470d}\label{class_controller_1_1_usuarios_controller_a2c1b0ccbaea37cf5983493f488ee470d} 
+{\bfseries Usuarios\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el controlador de usuarios. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_usuarios_controller_a1919c6ccf3e699b2da6ad9261e91775f}{Obtener\+Listado\+Usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el listado de usuarios. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_usuarios_controller_a081843f38d02143eb552295c48be1e62}{Crear\+Usuario}} (string nombre, string email, string telefono)
+\begin{DoxyCompactList}\small\item\em Crea un usuario nuevo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_usuarios_controller_a11c64e5c333c68f0eaf3aefd0b7d40b2}{Editar\+Usuario}} (int id, string nombre, string email, string telefono)
+\begin{DoxyCompactList}\small\item\em Edita un usuario existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_usuarios_controller_a30683e7694d2cbf018a2c71ecc554c1e}{Eliminar\+Usuario}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un usuario por id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lógica de negocio para usuarios. 
+
+\label{doc-func-members}
+\Hypertarget{class_controller_1_1_usuarios_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_1_1_usuarios_controller_a081843f38d02143eb552295c48be1e62}\index{Controller.UsuariosController@{Controller.UsuariosController}!CrearUsuario@{CrearUsuario}}
+\index{CrearUsuario@{CrearUsuario}!Controller.UsuariosController@{Controller.UsuariosController}}
+\doxysubsubsection{\texorpdfstring{CrearUsuario()}{CrearUsuario()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_usuarios_controller_a081843f38d02143eb552295c48be1e62} 
+bool Controller.\+Usuarios\+Controller.\+Crear\+Usuario (\begin{DoxyParamCaption}\item[{string}]{nombre}{, }\item[{string}]{email}{, }\item[{string}]{telefono}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un usuario nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del usuario.\\
+\hline
+{\em email} & Correo del usuario.\\
+\hline
+{\em telefono} & Teléfono del usuario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se crea correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_usuarios_controller_a11c64e5c333c68f0eaf3aefd0b7d40b2}\index{Controller.UsuariosController@{Controller.UsuariosController}!EditarUsuario@{EditarUsuario}}
+\index{EditarUsuario@{EditarUsuario}!Controller.UsuariosController@{Controller.UsuariosController}}
+\doxysubsubsection{\texorpdfstring{EditarUsuario()}{EditarUsuario()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_usuarios_controller_a11c64e5c333c68f0eaf3aefd0b7d40b2} 
+bool Controller.\+Usuarios\+Controller.\+Editar\+Usuario (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{nombre}{, }\item[{string}]{email}{, }\item[{string}]{telefono}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un usuario existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del usuario.\\
+\hline
+{\em nombre} & Nombre del usuario.\\
+\hline
+{\em email} & Correo del usuario.\\
+\hline
+{\em telefono} & Teléfono del usuario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se actualiza correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_usuarios_controller_a30683e7694d2cbf018a2c71ecc554c1e}\index{Controller.UsuariosController@{Controller.UsuariosController}!EliminarUsuario@{EliminarUsuario}}
+\index{EliminarUsuario@{EliminarUsuario}!Controller.UsuariosController@{Controller.UsuariosController}}
+\doxysubsubsection{\texorpdfstring{EliminarUsuario()}{EliminarUsuario()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_usuarios_controller_a30683e7694d2cbf018a2c71ecc554c1e} 
+bool Controller.\+Usuarios\+Controller.\+Eliminar\+Usuario (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un usuario por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del usuario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se elimina correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_usuarios_controller_a1919c6ccf3e699b2da6ad9261e91775f}\index{Controller.UsuariosController@{Controller.UsuariosController}!ObtenerListadoUsuarios@{ObtenerListadoUsuarios}}
+\index{ObtenerListadoUsuarios@{ObtenerListadoUsuarios}!Controller.UsuariosController@{Controller.UsuariosController}}
+\doxysubsubsection{\texorpdfstring{ObtenerListadoUsuarios()}{ObtenerListadoUsuarios()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_usuarios_controller_a1919c6ccf3e699b2da6ad9261e91775f} 
+Data\+Table Controller.\+Usuarios\+Controller.\+Obtener\+Listado\+Usuarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el listado de usuarios. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los usuarios.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Controller/\+Usuarios\+Controller.\+cs\end{DoxyCompactItemize}

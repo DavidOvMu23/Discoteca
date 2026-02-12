@@ -1,0 +1,25 @@
+var namespace_view =
+[
+    [ "Properties", "namespace_view_1_1_properties.html", null ],
+    [ "App", "class_view_1_1_app.html", "class_view_1_1_app" ],
+    [ "ArtistasForm", "class_view_1_1_artistas_form.html", "class_view_1_1_artistas_form" ],
+    [ "ArtistasView", "class_view_1_1_artistas_view.html", "class_view_1_1_artistas_view" ],
+    [ "GenerosForm", "class_view_1_1_generos_form.html", "class_view_1_1_generos_form" ],
+    [ "GenerosView", "class_view_1_1_generos_view.html", "class_view_1_1_generos_view" ],
+    [ "artistas", "class_view_1_1artistas.html", "class_view_1_1artistas" ],
+    [ "generos", "class_view_1_1generos.html", "class_view_1_1generos" ],
+    [ "home_discoteca", "class_view_1_1home__discoteca.html", "class_view_1_1home__discoteca" ],
+    [ "home", "class_view_1_1home.html", "class_view_1_1home" ],
+    [ "MainWindow", "class_view_1_1_main_window.html", "class_view_1_1_main_window" ],
+    [ "reservas", "class_view_1_1reservas.html", "class_view_1_1reservas" ],
+    [ "ReservasView", "class_view_1_1_reservas_view.html", "class_view_1_1_reservas_view" ],
+    [ "ReservasForm", "class_view_1_1_reservas_form.html", "class_view_1_1_reservas_form" ],
+    [ "ReservasUsuariosInforme", "class_view_1_1_reservas_usuarios_informe.html", "class_view_1_1_reservas_usuarios_informe" ],
+    [ "usuarios", "class_view_1_1usuarios.html", "class_view_1_1usuarios" ],
+    [ "UsuariosView", "class_view_1_1_usuarios_view.html", "class_view_1_1_usuarios_view" ],
+    [ "UsuariosForm", "class_view_1_1_usuarios_form.html", "class_view_1_1_usuarios_form" ],
+    [ "UsuariosInforme", "class_view_1_1_usuarios_informe.html", "class_view_1_1_usuarios_informe" ],
+    [ "Vinilos", "class_view_1_1_vinilos.html", "class_view_1_1_vinilos" ],
+    [ "VinilosView", "class_view_1_1_vinilos_view.html", "class_view_1_1_vinilos_view" ],
+    [ "VinilosForm", "class_view_1_1_vinilos_form.html", "class_view_1_1_vinilos_form" ]
+];

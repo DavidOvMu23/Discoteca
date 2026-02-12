@@ -1,0 +1,35 @@
+\chapter{PACKAGE }
+\hypertarget{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be}{}\label{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be}\index{PACKAGE@{PACKAGE}}
+The Entity Framework Core tools help with design-\/time development tasks. They\textquotesingle{}re primarily used to manage Migrations and to scaffold a {\ttfamily Db\+Context} and entity types by reverse engineering the schema of a database.
+
+This package, {\ttfamily Microsoft.\+Entity\+Framework\+Core.\+Tools} is for Power\+Shell tooling that works in the Visual Studio Package Manager Console (PMC).\hypertarget{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md5}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md5}
+Install the tools package by running the following in the Visual Studio PMC:\+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Install-\/Package\ Microsoft.EntityFrameworkCore.Tools}
+
+\end{DoxyCode}
+
+
+The available commands are listed in the following table.
+
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}PMC Command  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Usage  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#add-migration}{\texttt{Add-\/\+Migration}}  &Adds a new migration.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#bundle-migration}{\texttt{Bundle-\/\+Migration}}  &Creates an executable to update the database.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#drop-database}{\texttt{Drop-\/\+Database}}  &Drops the database.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#get-dbcontext}{\texttt{Get-\/\+Db\+Context}}  &Gets information about a {\ttfamily Db\+Context} type.  \\
+\href{https://learn.microsoft.com/en-us/ef/core/cli/powershell\#common-parameters}{\texttt{Get-\/\+Help Entity\+Framework}}  &Displays information about Entity Framework commands.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#get-migration}{\texttt{Get-\/\+Migration}}  &Lists available migrations.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#optimize-dbcontext}{\texttt{Optimize-\/\+Db\+Context}}  &Generates a compiled version of the model used by the {\ttfamily Db\+Context}.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#remove-migration}{\texttt{Remove-\/\+Migration}}  &Removes the last migration.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#scaffold-dbcontext}{\texttt{Scaffold-\/\+Db\+Context}}  &Generates a {\ttfamily Db\+Context} and entity type classes for a specified database.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#script-dbcontext}{\texttt{Script-\/\+Db\+Context}}  &Generates a SQL script from the {\ttfamily Db\+Context}. Bypasses any migrations.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#script-migration}{\texttt{Script-\/\+Migration}}  &Generates a SQL script from the migrations.  \\
+\href{https://learn.microsoft.com/ef/core/cli/powershell\#update-database}{\texttt{Update-\/\+Database}}  &Updates the database to the last migration or to a specified migration.  \\
+\end{DoxyTable}
+\hypertarget{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md6}{}\doxysubsection{\texorpdfstring{Getting started with EF Core}{Getting started with EF Core}}\label{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md6}
+See \href{https://learn.microsoft.com/ef/core/get-started/overview/install}{\texttt{Getting started with EF Core}} for more information about EF Nu\+Get packages, including which to install when getting started.\hypertarget{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md7}{}\doxysubsection{\texorpdfstring{Feedback}{Feedback}}\label{md__c_1_2_users_2_david_01_oviedo_2_desktop_2_viniloteca_2packages_2_microsoft_8_entity_framewor9ebd87aff5957e243b4fc75a87b660be_autotoc_md7}
+If you encounter a bug or issues with this package,you can \href{https://github.com/dotnet/efcore/issues/new/choose}{\texttt{open an Github issue}}. For more details, see \href{https://github.com/dotnet/efcore/blob/main/.github/SUPPORT.md}{\texttt{getting support}}. 

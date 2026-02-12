@@ -1,0 +1,129 @@
+\doxysection{Controller.\+Artistas\+Controller Class Reference}
+\hypertarget{class_controller_1_1_artistas_controller}{}\label{class_controller_1_1_artistas_controller}\index{Controller.ArtistasController@{Controller.ArtistasController}}
+
+
+Lógica de negocio para artistas.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_controller_1_1_artistas_controller_a95e1354138f84444493ebed895228e7a}\label{class_controller_1_1_artistas_controller_a95e1354138f84444493ebed895228e7a} 
+{\bfseries Artistas\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el controlador de artistas. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_artistas_controller_a64a5ba6cd31ad8292d3ed1a4bfadb3a3}{Obtener\+Listado\+Artistas}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el listado de artistas. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_artistas_controller_aa7cc0f09e746e5e0d46e9077cb128020}{Crear\+Artista}} (string nombre, string nacionalidad)
+\begin{DoxyCompactList}\small\item\em Crea un artista nuevo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_artistas_controller_a71b024374c900c8194cbabe12c9481ab}{Editar\+Artista}} (int id, string nombre, string nacionalidad)
+\begin{DoxyCompactList}\small\item\em Edita un artista existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_artistas_controller_a4d2d7e5bd69c43a60dfa64662ab59376}{Eliminar\+Artista}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un artista por id. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_artistas_controller_a49e25afc6e93c6b2672fa507c3559a3a}{Nombre\+Artista\+Disponible}} (Data\+Table artistas, string nombre)
+\begin{DoxyCompactList}\small\item\em Comprueba si el nombre del artista está disponible. en uso tambien en el proyecti de la prueba unitaria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lógica de negocio para artistas. 
+
+\label{doc-func-members}
+\Hypertarget{class_controller_1_1_artistas_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_1_1_artistas_controller_aa7cc0f09e746e5e0d46e9077cb128020}\index{Controller.ArtistasController@{Controller.ArtistasController}!CrearArtista@{CrearArtista}}
+\index{CrearArtista@{CrearArtista}!Controller.ArtistasController@{Controller.ArtistasController}}
+\doxysubsubsection{\texorpdfstring{CrearArtista()}{CrearArtista()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_artistas_controller_aa7cc0f09e746e5e0d46e9077cb128020} 
+bool Controller.\+Artistas\+Controller.\+Crear\+Artista (\begin{DoxyParamCaption}\item[{string}]{nombre}{, }\item[{string}]{nacionalidad}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un artista nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del artista.\\
+\hline
+{\em nacionalidad} & Nacionalidad del artista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se crea correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_artistas_controller_a71b024374c900c8194cbabe12c9481ab}\index{Controller.ArtistasController@{Controller.ArtistasController}!EditarArtista@{EditarArtista}}
+\index{EditarArtista@{EditarArtista}!Controller.ArtistasController@{Controller.ArtistasController}}
+\doxysubsubsection{\texorpdfstring{EditarArtista()}{EditarArtista()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_artistas_controller_a71b024374c900c8194cbabe12c9481ab} 
+bool Controller.\+Artistas\+Controller.\+Editar\+Artista (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{nombre}{, }\item[{string}]{nacionalidad}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un artista existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del artista.\\
+\hline
+{\em nombre} & Nombre del artista.\\
+\hline
+{\em nacionalidad} & Nacionalidad del artista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se actualiza correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_artistas_controller_a4d2d7e5bd69c43a60dfa64662ab59376}\index{Controller.ArtistasController@{Controller.ArtistasController}!EliminarArtista@{EliminarArtista}}
+\index{EliminarArtista@{EliminarArtista}!Controller.ArtistasController@{Controller.ArtistasController}}
+\doxysubsubsection{\texorpdfstring{EliminarArtista()}{EliminarArtista()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_artistas_controller_a4d2d7e5bd69c43a60dfa64662ab59376} 
+bool Controller.\+Artistas\+Controller.\+Eliminar\+Artista (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un artista por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del artista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se elimina correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_artistas_controller_a49e25afc6e93c6b2672fa507c3559a3a}\index{Controller.ArtistasController@{Controller.ArtistasController}!NombreArtistaDisponible@{NombreArtistaDisponible}}
+\index{NombreArtistaDisponible@{NombreArtistaDisponible}!Controller.ArtistasController@{Controller.ArtistasController}}
+\doxysubsubsection{\texorpdfstring{NombreArtistaDisponible()}{NombreArtistaDisponible()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_artistas_controller_a49e25afc6e93c6b2672fa507c3559a3a} 
+bool Controller.\+Artistas\+Controller.\+Nombre\+Artista\+Disponible (\begin{DoxyParamCaption}\item[{Data\+Table}]{artistas}{, }\item[{string}]{nombre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba si el nombre del artista está disponible. en uso tambien en el proyecti de la prueba unitaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em artistas} & Tabla de artistas.\\
+\hline
+{\em nombre} & Nombre a validar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el nombre no existe.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_artistas_controller_a64a5ba6cd31ad8292d3ed1a4bfadb3a3}\index{Controller.ArtistasController@{Controller.ArtistasController}!ObtenerListadoArtistas@{ObtenerListadoArtistas}}
+\index{ObtenerListadoArtistas@{ObtenerListadoArtistas}!Controller.ArtistasController@{Controller.ArtistasController}}
+\doxysubsubsection{\texorpdfstring{ObtenerListadoArtistas()}{ObtenerListadoArtistas()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_artistas_controller_a64a5ba6cd31ad8292d3ed1a4bfadb3a3} 
+Data\+Table Controller.\+Artistas\+Controller.\+Obtener\+Listado\+Artistas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el listado de artistas. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los artistas.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Controller/\+Artistas\+Controller.\+cs\end{DoxyCompactItemize}

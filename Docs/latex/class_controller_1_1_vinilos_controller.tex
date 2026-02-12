@@ -1,0 +1,119 @@
+\doxysection{Controller.\+Vinilos\+Controller Class Reference}
+\hypertarget{class_controller_1_1_vinilos_controller}{}\label{class_controller_1_1_vinilos_controller}\index{Controller.VinilosController@{Controller.VinilosController}}
+
+
+Lógica de negocio para vinilos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_controller_1_1_vinilos_controller_aeca40bc4aef7e00ec6b6cbec3d76360f}\label{class_controller_1_1_vinilos_controller_aeca40bc4aef7e00ec6b6cbec3d76360f} 
+{\bfseries Vinilos\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el controlador de vinilos. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_vinilos_controller_ae09f68029c8ce664ac124bec03ed99ef}{Obtener\+Listado\+Vinilos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el listado de vinilos. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_vinilos_controller_acb0474f2edb9bae5b16e015940182faf}{Crear\+Vinilo}} (string titulo, int anio, string estado, int id\+Artista, int id\+Genero)
+\begin{DoxyCompactList}\small\item\em Crea un vinilo nuevo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_vinilos_controller_a3d78bf914ed0350f186b825753ba5786}{Editar\+Vinilo}} (int id, string titulo, int anio, string estado, int id\+Artista, int id\+Genero)
+\begin{DoxyCompactList}\small\item\em Edita un vinilo existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_vinilos_controller_a936320afe638cf994583550794b79796}{Eliminar\+Vinilo}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un vinilo por id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lógica de negocio para vinilos. 
+
+\label{doc-func-members}
+\Hypertarget{class_controller_1_1_vinilos_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_1_1_vinilos_controller_acb0474f2edb9bae5b16e015940182faf}\index{Controller.VinilosController@{Controller.VinilosController}!CrearVinilo@{CrearVinilo}}
+\index{CrearVinilo@{CrearVinilo}!Controller.VinilosController@{Controller.VinilosController}}
+\doxysubsubsection{\texorpdfstring{CrearVinilo()}{CrearVinilo()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_vinilos_controller_acb0474f2edb9bae5b16e015940182faf} 
+bool Controller.\+Vinilos\+Controller.\+Crear\+Vinilo (\begin{DoxyParamCaption}\item[{string}]{titulo}{, }\item[{int}]{anio}{, }\item[{string}]{estado}{, }\item[{int}]{id\+Artista}{, }\item[{int}]{id\+Genero}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un vinilo nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Título del vinilo.\\
+\hline
+{\em anio} & Año de lanzamiento.\\
+\hline
+{\em estado} & Estado del vinilo.\\
+\hline
+{\em id\+Artista} & Id del artista.\\
+\hline
+{\em id\+Genero} & Id del género.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se crea correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_vinilos_controller_a3d78bf914ed0350f186b825753ba5786}\index{Controller.VinilosController@{Controller.VinilosController}!EditarVinilo@{EditarVinilo}}
+\index{EditarVinilo@{EditarVinilo}!Controller.VinilosController@{Controller.VinilosController}}
+\doxysubsubsection{\texorpdfstring{EditarVinilo()}{EditarVinilo()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_vinilos_controller_a3d78bf914ed0350f186b825753ba5786} 
+bool Controller.\+Vinilos\+Controller.\+Editar\+Vinilo (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{titulo}{, }\item[{int}]{anio}{, }\item[{string}]{estado}{, }\item[{int}]{id\+Artista}{, }\item[{int}]{id\+Genero}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un vinilo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del vinilo.\\
+\hline
+{\em titulo} & Título del vinilo.\\
+\hline
+{\em anio} & Año de lanzamiento.\\
+\hline
+{\em estado} & Estado del vinilo.\\
+\hline
+{\em id\+Artista} & Id del artista.\\
+\hline
+{\em id\+Genero} & Id del género.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se actualiza correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_vinilos_controller_a936320afe638cf994583550794b79796}\index{Controller.VinilosController@{Controller.VinilosController}!EliminarVinilo@{EliminarVinilo}}
+\index{EliminarVinilo@{EliminarVinilo}!Controller.VinilosController@{Controller.VinilosController}}
+\doxysubsubsection{\texorpdfstring{EliminarVinilo()}{EliminarVinilo()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_vinilos_controller_a936320afe638cf994583550794b79796} 
+bool Controller.\+Vinilos\+Controller.\+Eliminar\+Vinilo (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un vinilo por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del vinilo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se elimina correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_vinilos_controller_ae09f68029c8ce664ac124bec03ed99ef}\index{Controller.VinilosController@{Controller.VinilosController}!ObtenerListadoVinilos@{ObtenerListadoVinilos}}
+\index{ObtenerListadoVinilos@{ObtenerListadoVinilos}!Controller.VinilosController@{Controller.VinilosController}}
+\doxysubsubsection{\texorpdfstring{ObtenerListadoVinilos()}{ObtenerListadoVinilos()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_vinilos_controller_ae09f68029c8ce664ac124bec03ed99ef} 
+Data\+Table Controller.\+Vinilos\+Controller.\+Obtener\+Listado\+Vinilos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el listado de vinilos. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los vinilos.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Controller/\+Vinilos\+Controller.\+cs\end{DoxyCompactItemize}

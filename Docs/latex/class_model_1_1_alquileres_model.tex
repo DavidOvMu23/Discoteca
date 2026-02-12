@@ -1,0 +1,120 @@
+\doxysection{Model.\+Alquileres\+Model Class Reference}
+\hypertarget{class_model_1_1_alquileres_model}{}\label{class_model_1_1_alquileres_model}\index{Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_model_1_1_alquileres_model_a703c25aeeb18def25f99a4a6792668a5}\label{class_model_1_1_alquileres_model_a703c25aeeb18def25f99a4a6792668a5} 
+Data\+Table {\bfseries Listar\+Alquileres} ()
+\item 
+void \doxymbox{\hyperlink{class_model_1_1_alquileres_model_a0a95f7c94376fe73fb6db032f66a97cf}{Insertar\+Alquiler}} (int id\+Usuario, int id\+Vinilo, Date\+Time fecha\+Salida, Date\+Time fecha\+Entrega\+Prevista)
+\begin{DoxyCompactList}\small\item\em Inserta un alquiler nuevo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_1_1_alquileres_model_a5259e31d893b6774f19c270c1e6055ce}{Actualizar\+Alquiler}} (int id, int id\+Usuario, int id\+Vinilo, Date\+Time fecha\+Salida, Date\+Time fecha\+Entrega\+Prevista, Date\+Time? fecha\+Devolucion\+Real)
+\begin{DoxyCompactList}\small\item\em Actualiza un alquiler existente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_1_1_alquileres_model_abab1580884a44034b4fb597f7dda401d}{Eliminar\+Alquiler}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un alquiler por id. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_model_1_1_alquileres_model_a1c388399f01f6c10c6b7edc04508f118}{Prueba\+Conexion}} ()
+\begin{DoxyCompactList}\small\item\em Metodo para probar la conexión a la base de datos My\+SQL. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_model_1_1_alquileres_model_acb1183cb818b8ce02cf7aeb7f65a96d4}{Listar\+Alquileres\+Usuario\+Informe}} (int id\+Usuario\+Seleccionado)
+\begin{DoxyCompactList}\small\item\em Metodo para listar alquileres de un usuario especifico para el informe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_model_1_1_alquileres_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_1_1_alquileres_model_a5259e31d893b6774f19c270c1e6055ce}\index{Model.AlquileresModel@{Model.AlquileresModel}!ActualizarAlquiler@{ActualizarAlquiler}}
+\index{ActualizarAlquiler@{ActualizarAlquiler}!Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection{\texorpdfstring{ActualizarAlquiler()}{ActualizarAlquiler()}}
+{\footnotesize\ttfamily \label{class_model_1_1_alquileres_model_a5259e31d893b6774f19c270c1e6055ce} 
+void Model.\+Alquileres\+Model.\+Actualizar\+Alquiler (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{id\+Usuario}{, }\item[{int}]{id\+Vinilo}{, }\item[{Date\+Time}]{fecha\+Salida}{, }\item[{Date\+Time}]{fecha\+Entrega\+Prevista}{, }\item[{Date\+Time?}]{fecha\+Devolucion\+Real}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza un alquiler existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del alquiler.\\
+\hline
+{\em id\+Usuario} & Id del usuario.\\
+\hline
+{\em id\+Vinilo} & Id del vinilo.\\
+\hline
+{\em fecha\+Salida} & Fecha de salida.\\
+\hline
+{\em fecha\+Entrega\+Prevista} & Fecha prevista de entrega.\\
+\hline
+{\em fecha\+Devolucion\+Real} & Fecha real de devolución.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_alquileres_model_abab1580884a44034b4fb597f7dda401d}\index{Model.AlquileresModel@{Model.AlquileresModel}!EliminarAlquiler@{EliminarAlquiler}}
+\index{EliminarAlquiler@{EliminarAlquiler}!Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection{\texorpdfstring{EliminarAlquiler()}{EliminarAlquiler()}}
+{\footnotesize\ttfamily \label{class_model_1_1_alquileres_model_abab1580884a44034b4fb597f7dda401d} 
+void Model.\+Alquileres\+Model.\+Eliminar\+Alquiler (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un alquiler por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del alquiler.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_alquileres_model_a0a95f7c94376fe73fb6db032f66a97cf}\index{Model.AlquileresModel@{Model.AlquileresModel}!InsertarAlquiler@{InsertarAlquiler}}
+\index{InsertarAlquiler@{InsertarAlquiler}!Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection{\texorpdfstring{InsertarAlquiler()}{InsertarAlquiler()}}
+{\footnotesize\ttfamily \label{class_model_1_1_alquileres_model_a0a95f7c94376fe73fb6db032f66a97cf} 
+void Model.\+Alquileres\+Model.\+Insertar\+Alquiler (\begin{DoxyParamCaption}\item[{int}]{id\+Usuario}{, }\item[{int}]{id\+Vinilo}{, }\item[{Date\+Time}]{fecha\+Salida}{, }\item[{Date\+Time}]{fecha\+Entrega\+Prevista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta un alquiler nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Usuario} & Id del usuario.\\
+\hline
+{\em id\+Vinilo} & Id del vinilo.\\
+\hline
+{\em fecha\+Salida} & Fecha de salida.\\
+\hline
+{\em fecha\+Entrega\+Prevista} & Fecha de entrega prevista.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_alquileres_model_acb1183cb818b8ce02cf7aeb7f65a96d4}\index{Model.AlquileresModel@{Model.AlquileresModel}!ListarAlquileresUsuarioInforme@{ListarAlquileresUsuarioInforme}}
+\index{ListarAlquileresUsuarioInforme@{ListarAlquileresUsuarioInforme}!Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection{\texorpdfstring{ListarAlquileresUsuarioInforme()}{ListarAlquileresUsuarioInforme()}}
+{\footnotesize\ttfamily \label{class_model_1_1_alquileres_model_acb1183cb818b8ce02cf7aeb7f65a96d4} 
+Data\+Table Model.\+Alquileres\+Model.\+Listar\+Alquileres\+Usuario\+Informe (\begin{DoxyParamCaption}\item[{int}]{id\+Usuario\+Seleccionado}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo para listar alquileres de un usuario especifico para el informe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Usuario\+Seleccionado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_model_1_1_alquileres_model_a1c388399f01f6c10c6b7edc04508f118}\index{Model.AlquileresModel@{Model.AlquileresModel}!PruebaConexion@{PruebaConexion}}
+\index{PruebaConexion@{PruebaConexion}!Model.AlquileresModel@{Model.AlquileresModel}}
+\doxysubsubsection{\texorpdfstring{PruebaConexion()}{PruebaConexion()}}
+{\footnotesize\ttfamily \label{class_model_1_1_alquileres_model_a1c388399f01f6c10c6b7edc04508f118} 
+bool Model.\+Alquileres\+Model.\+Prueba\+Conexion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo para probar la conexión a la base de datos My\+SQL. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Model/\+Alquileres\+Model.\+cs\end{DoxyCompactItemize}

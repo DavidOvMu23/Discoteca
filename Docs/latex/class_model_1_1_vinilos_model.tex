@@ -1,0 +1,137 @@
+\doxysection{Model.\+Vinilos\+Model Class Reference}
+\hypertarget{class_model_1_1_vinilos_model}{}\label{class_model_1_1_vinilos_model}\index{Model.VinilosModel@{Model.VinilosModel}}
+
+
+Acceso a datos de vinilos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Table \doxymbox{\hyperlink{class_model_1_1_vinilos_model_a944570d17c33ede210e9ce17d034ff22}{Listar\+Vinilos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todos los vinilos registrados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_1_1_vinilos_model_a8c8145f0e808408e05b9a6c86993d0f6}{Insertar\+Vinilo}} (string titulo, int anio, string estado, int id\+Artista, int id\+Genero)
+\begin{DoxyCompactList}\small\item\em Inserta un vinilo nuevo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_1_1_vinilos_model_ae6c1dcc26f89dba739b3fc0df9579ef7}{Actualizar\+Vinilo}} (int id, string titulo, int anio, string estado, int id\+Artista, int id\+Genero)
+\begin{DoxyCompactList}\small\item\em Actualiza los datos de un vinilo existente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_1_1_vinilos_model_afe7df1d8edd383f45dfab8a2592a8a6b}{Eliminar\+Vinilo}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un vinilo por id. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_model_1_1_vinilos_model_ac8512ea58c6b8de7f33503dfc6983475}{Listar\+Vinilos\+Informe}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene datos de vinilos para el informe principal. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_model_1_1_vinilos_model_ade12feb0d3dbcf0dd1add2b007ec4119}{Listar\+Vinilos\+Artista\+Informe}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene datos de vinilos y artistas para informe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Acceso a datos de vinilos. 
+
+\label{doc-func-members}
+\Hypertarget{class_model_1_1_vinilos_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_1_1_vinilos_model_ae6c1dcc26f89dba739b3fc0df9579ef7}\index{Model.VinilosModel@{Model.VinilosModel}!ActualizarVinilo@{ActualizarVinilo}}
+\index{ActualizarVinilo@{ActualizarVinilo}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{ActualizarVinilo()}{ActualizarVinilo()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_ae6c1dcc26f89dba739b3fc0df9579ef7} 
+void Model.\+Vinilos\+Model.\+Actualizar\+Vinilo (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{titulo}{, }\item[{int}]{anio}{, }\item[{string}]{estado}{, }\item[{int}]{id\+Artista}{, }\item[{int}]{id\+Genero}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza los datos de un vinilo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del vinilo.\\
+\hline
+{\em titulo} & Título del vinilo.\\
+\hline
+{\em anio} & Año de lanzamiento.\\
+\hline
+{\em estado} & Estado del vinilo.\\
+\hline
+{\em id\+Artista} & Id del artista.\\
+\hline
+{\em id\+Genero} & Id del género.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_vinilos_model_afe7df1d8edd383f45dfab8a2592a8a6b}\index{Model.VinilosModel@{Model.VinilosModel}!EliminarVinilo@{EliminarVinilo}}
+\index{EliminarVinilo@{EliminarVinilo}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{EliminarVinilo()}{EliminarVinilo()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_afe7df1d8edd383f45dfab8a2592a8a6b} 
+void Model.\+Vinilos\+Model.\+Eliminar\+Vinilo (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un vinilo por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id del vinilo.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_vinilos_model_a8c8145f0e808408e05b9a6c86993d0f6}\index{Model.VinilosModel@{Model.VinilosModel}!InsertarVinilo@{InsertarVinilo}}
+\index{InsertarVinilo@{InsertarVinilo}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{InsertarVinilo()}{InsertarVinilo()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_a8c8145f0e808408e05b9a6c86993d0f6} 
+void Model.\+Vinilos\+Model.\+Insertar\+Vinilo (\begin{DoxyParamCaption}\item[{string}]{titulo}{, }\item[{int}]{anio}{, }\item[{string}]{estado}{, }\item[{int}]{id\+Artista}{, }\item[{int}]{id\+Genero}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta un vinilo nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Título del vinilo.\\
+\hline
+{\em anio} & Año de lanzamiento.\\
+\hline
+{\em estado} & Estado del vinilo.\\
+\hline
+{\em id\+Artista} & Id del artista.\\
+\hline
+{\em id\+Genero} & Id del género.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_1_1_vinilos_model_a944570d17c33ede210e9ce17d034ff22}\index{Model.VinilosModel@{Model.VinilosModel}!ListarVinilos@{ListarVinilos}}
+\index{ListarVinilos@{ListarVinilos}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{ListarVinilos()}{ListarVinilos()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_a944570d17c33ede210e9ce17d034ff22} 
+Data\+Table Model.\+Vinilos\+Model.\+Listar\+Vinilos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todos los vinilos registrados. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los vinilos.
+\end{DoxyReturn}
+\Hypertarget{class_model_1_1_vinilos_model_ade12feb0d3dbcf0dd1add2b007ec4119}\index{Model.VinilosModel@{Model.VinilosModel}!ListarVinilosArtistaInforme@{ListarVinilosArtistaInforme}}
+\index{ListarVinilosArtistaInforme@{ListarVinilosArtistaInforme}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{ListarVinilosArtistaInforme()}{ListarVinilosArtistaInforme()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_ade12feb0d3dbcf0dd1add2b007ec4119} 
+Data\+Table Model.\+Vinilos\+Model.\+Listar\+Vinilos\+Artista\+Informe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene datos de vinilos y artistas para informe. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con la información del informe.
+\end{DoxyReturn}
+\Hypertarget{class_model_1_1_vinilos_model_ac8512ea58c6b8de7f33503dfc6983475}\index{Model.VinilosModel@{Model.VinilosModel}!ListarVinilosInforme@{ListarVinilosInforme}}
+\index{ListarVinilosInforme@{ListarVinilosInforme}!Model.VinilosModel@{Model.VinilosModel}}
+\doxysubsubsection{\texorpdfstring{ListarVinilosInforme()}{ListarVinilosInforme()}}
+{\footnotesize\ttfamily \label{class_model_1_1_vinilos_model_ac8512ea58c6b8de7f33503dfc6983475} 
+Data\+Table Model.\+Vinilos\+Model.\+Listar\+Vinilos\+Informe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene datos de vinilos para el informe principal. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con la información del informe.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Model/\+Vinilos\+Model.\+cs\end{DoxyCompactItemize}

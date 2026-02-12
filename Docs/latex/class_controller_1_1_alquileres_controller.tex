@@ -1,0 +1,159 @@
+\doxysection{Controller.\+Alquileres\+Controller Class Reference}
+\hypertarget{class_controller_1_1_alquileres_controller}{}\label{class_controller_1_1_alquileres_controller}\index{Controller.AlquileresController@{Controller.AlquileresController}}
+
+
+Lógica de negocio para alquileres.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_controller_1_1_alquileres_controller_abfc741139a02b37d46f790522eed1c6a}\label{class_controller_1_1_alquileres_controller_abfc741139a02b37d46f790522eed1c6a} 
+{\bfseries Alquileres\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el controlador de alquileres. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_af42f0157c66d4d31790df30363948b17}{Obtener\+Listado}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el listado de alquileres. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_a035655fde798a5e468a03c8b905eb7e3}{Crear\+Alquiler}} (int id\+Usuario, int id\+Vinilo, Date\+Time fecha\+Salida, Date\+Time fecha\+Entrega\+Prevista)
+\begin{DoxyCompactList}\small\item\em Crea un alquiler nuevo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_ab7ce727e3c0f6026778489bd6a55ea74}{Editar\+Alquiler}} (int id\+Alquiler, int id\+Usuario, int id\+Vinilo, Date\+Time fecha\+Salida, Date\+Time fecha\+Entrega\+Prevista, Date\+Time? fecha\+Devolucion\+Real)
+\begin{DoxyCompactList}\small\item\em Edita un alquiler existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_a610f41b5c7d9a1934bbbb20f8bfe86b3}{Eliminar\+ALquiler}} (int id\+Alquiler)
+\begin{DoxyCompactList}\small\item\em Elimina un alquiler por id. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_a99adb2697253be507aedfbc9a48fd58b}{Vinilo\+Disponible}} (Data\+Table alquileres, int id\+Vinilo)
+\begin{DoxyCompactList}\small\item\em Comprueba si un vinilo está disponible según los alquileres abiertos. en uso tambien para la prueba unitaria. \end{DoxyCompactList}\item 
+Data\+Table \doxymbox{\hyperlink{class_controller_1_1_alquileres_controller_a7c14ff3032ab136f70bda503943120a1}{Obtener\+Alquileres\+Por\+Usuario}} (int id\+Usuario)
+\begin{DoxyCompactList}\small\item\em Obtiene alquileres filtrados por usuario para el informe. lo ponemos aqui para que así el informe no tenga acceso al model y se mantenga la separación de proyectos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lógica de negocio para alquileres. 
+
+\label{doc-func-members}
+\Hypertarget{class_controller_1_1_alquileres_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_1_1_alquileres_controller_a035655fde798a5e468a03c8b905eb7e3}\index{Controller.AlquileresController@{Controller.AlquileresController}!CrearAlquiler@{CrearAlquiler}}
+\index{CrearAlquiler@{CrearAlquiler}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{CrearAlquiler()}{CrearAlquiler()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_a035655fde798a5e468a03c8b905eb7e3} 
+bool Controller.\+Alquileres\+Controller.\+Crear\+Alquiler (\begin{DoxyParamCaption}\item[{int}]{id\+Usuario}{, }\item[{int}]{id\+Vinilo}{, }\item[{Date\+Time}]{fecha\+Salida}{, }\item[{Date\+Time}]{fecha\+Entrega\+Prevista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un alquiler nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Usuario} & Id del usuario.\\
+\hline
+{\em id\+Vinilo} & Id del vinilo.\\
+\hline
+{\em fecha\+Salida} & Fecha de salida.\\
+\hline
+{\em fecha\+Entrega\+Prevista} & Fecha de entrega prevista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se crea correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_alquileres_controller_ab7ce727e3c0f6026778489bd6a55ea74}\index{Controller.AlquileresController@{Controller.AlquileresController}!EditarAlquiler@{EditarAlquiler}}
+\index{EditarAlquiler@{EditarAlquiler}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{EditarAlquiler()}{EditarAlquiler()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_ab7ce727e3c0f6026778489bd6a55ea74} 
+bool Controller.\+Alquileres\+Controller.\+Editar\+Alquiler (\begin{DoxyParamCaption}\item[{int}]{id\+Alquiler}{, }\item[{int}]{id\+Usuario}{, }\item[{int}]{id\+Vinilo}{, }\item[{Date\+Time}]{fecha\+Salida}{, }\item[{Date\+Time}]{fecha\+Entrega\+Prevista}{, }\item[{Date\+Time?}]{fecha\+Devolucion\+Real}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un alquiler existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Alquiler} & Id del alquiler.\\
+\hline
+{\em id\+Usuario} & Id del usuario.\\
+\hline
+{\em id\+Vinilo} & Id del vinilo.\\
+\hline
+{\em fecha\+Salida} & Fecha de salida.\\
+\hline
+{\em fecha\+Entrega\+Prevista} & Fecha de entrega prevista.\\
+\hline
+{\em fecha\+Devolucion\+Real} & Fecha real de devolución.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se actualiza correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_alquileres_controller_a610f41b5c7d9a1934bbbb20f8bfe86b3}\index{Controller.AlquileresController@{Controller.AlquileresController}!EliminarALquiler@{EliminarALquiler}}
+\index{EliminarALquiler@{EliminarALquiler}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{EliminarALquiler()}{EliminarALquiler()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_a610f41b5c7d9a1934bbbb20f8bfe86b3} 
+bool Controller.\+Alquileres\+Controller.\+Eliminar\+ALquiler (\begin{DoxyParamCaption}\item[{int}]{id\+Alquiler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un alquiler por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Alquiler} & Id del alquiler.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se elimina correctamente.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_alquileres_controller_a7c14ff3032ab136f70bda503943120a1}\index{Controller.AlquileresController@{Controller.AlquileresController}!ObtenerAlquileresPorUsuario@{ObtenerAlquileresPorUsuario}}
+\index{ObtenerAlquileresPorUsuario@{ObtenerAlquileresPorUsuario}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{ObtenerAlquileresPorUsuario()}{ObtenerAlquileresPorUsuario()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_a7c14ff3032ab136f70bda503943120a1} 
+Data\+Table Controller.\+Alquileres\+Controller.\+Obtener\+Alquileres\+Por\+Usuario (\begin{DoxyParamCaption}\item[{int}]{id\+Usuario}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene alquileres filtrados por usuario para el informe. lo ponemos aqui para que así el informe no tenga acceso al model y se mantenga la separación de proyectos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Usuario} & Id del usuario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tabla con los alquileres del usuario.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_alquileres_controller_af42f0157c66d4d31790df30363948b17}\index{Controller.AlquileresController@{Controller.AlquileresController}!ObtenerListado@{ObtenerListado}}
+\index{ObtenerListado@{ObtenerListado}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{ObtenerListado()}{ObtenerListado()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_af42f0157c66d4d31790df30363948b17} 
+Data\+Table Controller.\+Alquileres\+Controller.\+Obtener\+Listado (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el listado de alquileres. 
+
+\begin{DoxyReturn}{Returns}
+Tabla con los alquileres.
+\end{DoxyReturn}
+\Hypertarget{class_controller_1_1_alquileres_controller_a99adb2697253be507aedfbc9a48fd58b}\index{Controller.AlquileresController@{Controller.AlquileresController}!ViniloDisponible@{ViniloDisponible}}
+\index{ViniloDisponible@{ViniloDisponible}!Controller.AlquileresController@{Controller.AlquileresController}}
+\doxysubsubsection{\texorpdfstring{ViniloDisponible()}{ViniloDisponible()}}
+{\footnotesize\ttfamily \label{class_controller_1_1_alquileres_controller_a99adb2697253be507aedfbc9a48fd58b} 
+bool Controller.\+Alquileres\+Controller.\+Vinilo\+Disponible (\begin{DoxyParamCaption}\item[{Data\+Table}]{alquileres}{, }\item[{int}]{id\+Vinilo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba si un vinilo está disponible según los alquileres abiertos. en uso tambien para la prueba unitaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alquileres} & Tabla de alquileres.\\
+\hline
+{\em id\+Vinilo} & Id del vinilo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si está disponible.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+\+Controller/\+Alquileres\+Controller.\+cs\end{DoxyCompactItemize}

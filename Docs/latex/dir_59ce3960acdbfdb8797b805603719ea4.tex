@@ -1,0 +1,75 @@
+\doxysection{C:\+/\+\+Users/\+\+David Oviedo/\+\+Desktop/\+\+Viniloteca/\+packages/\+\+My\+Sql.Data.9.6.0 Directory Reference}
+\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4}{}\label{dir_59ce3960acdbfdb8797b805603719ea4}\index{C:/Users/David Oviedo/Desktop/Viniloteca/packages/MySql.Data.9.6.0 Directory Reference@{C:/Users/David Oviedo/Desktop/Viniloteca/packages/MySql.Data.9.6.0 Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md8}{}\doxysubsection{\texorpdfstring{About}{About}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md8}
+My\+SQL provides connectivity for client applications developed in .NET compatible programming languages with My\+SQL Connector/\+\+NET through a series of packages.
+
+My\+Sql.\+Data is the core package of Connector/\+\+NET. It is compatible with .NET Framework 4.\+6+ and .NET 8.\+0+ and provides classic My\+SQL protocol and My\+SQL X Dev\+API capabilities.
+
+More information at \href{https://dev.mysql.com/doc/connector-net/en/}{\texttt{My\+SQL Connector/\+\+NET documentation}}.\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md9}{}\doxysubsection{\texorpdfstring{How to use}{How to use}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MySql.Data.MySqlClient.MySqlConnection\ myConnection;}
+\DoxyCodeLine{string\ myConnectionString;}
+\DoxyCodeLine{//set\ the\ correct\ values\ for\ your\ server,\ user,\ password\ and\ database\ name}
+\DoxyCodeLine{myConnectionString\ =\ "{}server=127.0.0.1;uid=root;pwd=12345;database=test"{};}
+\DoxyCodeLine{}
+\DoxyCodeLine{try}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ myConnection\ =\ new\ MySql.Data.MySqlClient.MySqlConnection(myConnectionString);}
+\DoxyCodeLine{\ \ //open\ a\ connection}
+\DoxyCodeLine{\ \ myConnection.Open();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ //\ create\ a\ MySQL\ command\ and\ set\ the\ SQL\ statement\ with\ parameters}
+\DoxyCodeLine{\ \ MySqlCommand\ myCommand\ =\ new\ MySqlCommand();}
+\DoxyCodeLine{\ \ myCommand.Connection\ =\ myConnection;}
+\DoxyCodeLine{\ \ myCommand.CommandText\ =\ @"{}SELECT\ *\ FROM\ clients\ WHERE\ client\_id\ =\ @clientId;"{};}
+\DoxyCodeLine{\ \ myCommand.Parameters.AddWithValue("{}@clientId"{},\ clientId);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ //\ execute\ the\ command\ and\ read\ the\ results}
+\DoxyCodeLine{\ \ using\ var\ myReader\ =\ myCommand.ExecuteReader()}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ while\ (myReader.Read())}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ var\ id\ =\ myReader.GetInt32("{}client\_id"{});}
+\DoxyCodeLine{\ \ \ \ \ \ var\ name\ =\ myReader.GetString("{}client\_name"{});}
+\DoxyCodeLine{\ \ \ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ myConnection.Close();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{catch\ (MySql.Data.MySqlClient.MySqlException\ ex)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ MessageBox.Show(ex.Message);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md10}{}\doxysubsection{\texorpdfstring{Related Packages}{Related Packages}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md10}
+
+\begin{DoxyItemize}
+\item Entity Framework Core:\+ \href{https://www.nuget.org/packages/MySql.EntityFrameworkCore/}{\texttt{My\+Sql.\+Entity\+Framework\+Core}}
+\item Entity Framework:\+ \href{https://www.nuget.org/packages/MySql.Data.EntityFramework/}{\texttt{My\+Sql.\+Data.\+Entity\+Framework}}
+\item Web:\+ \href{https://www.nuget.org/packages/MySql.Web/}{\texttt{My\+Sql.\+Web}}
+\item Open\+Telemetry:\+ \href{https://www.nuget.org/packages/MySql.Data.OpenTelemetry/}{\texttt{My\+Sql.\+Data.\+Open\+Telemetry}}
+\end{DoxyItemize}\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md11}{}\doxysubsection{\texorpdfstring{Licensing}{Licensing}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md11}
+Please refer to files \href{https://github.com/mysql/mysql-connector-net/blob/-/README}{\texttt{README}} and \href{https://github.com/mysql/mysql-connector-net/blob/-/LICENSE}{\texttt{LICENSE}}, available in the Connector/\+\+NET Git\+Hub repository, and \href{https://dev.mysql.com/doc/connector-net/en/preface.html}{\texttt{Legal Notices in documentation}} for further details.\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md12}{}\doxysubsection{\texorpdfstring{Security}{Security}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md12}
+Oracle values the independent security research community and believes that responsible disclosure of security vulnerabilities helps us ensure the security and privacy of all our users. Please refer to the \href{https://github.com/mysql/mysql-connector-net/blob/-/SECURITY.md}{\texttt{security guidelines}} document for additional information.\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md13}{}\doxysubsection{\texorpdfstring{Contributing}{Contributing}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md13}
+We greatly appreciate feedback from our users, including bug reports and code contributions. Your input helps us improve, and we thank you for any issues you report or code you contribute. Please refer to the \href{https://github.com/mysql/mysql-connector-net/blob/-/CONTRIBUTING.md}{\texttt{contributing guidelines}} document for additional information.\hypertarget{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{Additional Resources}{Additional Resources}}\label{dir_59ce3960acdbfdb8797b805603719ea4_autotoc_md14}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/mysql/mysql-connector-net/}{\texttt{My\+SQL Connector/\+\+NET Git\+Hub}}
+\item \href{https://dev.mysql.com/doc/connector-net/en/}{\texttt{My\+SQL Connector/\+\+NET Developer Guide}}
+\item \href{https://dev.mysql.com/doc/dev/connector-net/latest/}{\texttt{My\+SQL Connector/\+\+NET API}}
+\item \href{https://www.nuget.org/profiles/MySQL/}{\texttt{My\+SQL Nu\+Get}}
+\item \href{https://forums.mysql.com/list.php?38}{\texttt{My\+SQL Connector/\+\+NET and C\#, Mono, .Net Forum}}
+\item \href{https://mysqlcommunity.slack.com/messages/connectors/}{\texttt{{\ttfamily \#connectors} channel on My\+SQL Community Slack}} (\href{https://lefred.be/mysql-community-on-slack/}{\texttt{Sign-\/up}} required if you do not have an Oracle account.)
+\item \href{https://x.com/MySQL/}{\texttt{@\+My\+SQL on X}}.
+\item \href{https://blogs.oracle.com/mysql/}{\texttt{My\+SQL Blog}}.
+\item \href{https://dev.mysql.com/blog-archive/?cat=Connectors\%20\%2F\%20Languages}{\texttt{My\+SQL Connectors Blog archive}}.
+\item \href{https://www.mysql.com/news-and-events/newsletter/}{\texttt{My\+SQL Newsletter}}.
+\item \href{https://bugs.mysql.com}{\texttt{My\+SQL Bugs Tracking System}}.
+\end{DoxyItemize}
+
+For more information about this and other My\+SQL products, please visit \href{https://www.mysql.com/about/contact/}{\texttt{My\+SQL Contact \& Questions}}. 
