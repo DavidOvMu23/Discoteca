@@ -24,7 +24,6 @@ namespace Informes
         public ViewReporteReservaUsuario()
         {
             InitializeComponent();
-            // constructor does not auto-load data now; caller should call ShowReport
             reportViewer.Owner = this;
         }
 
