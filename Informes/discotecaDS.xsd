@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Discoteca_DataSet" targetNamespace="http://tempuri.org/Discoteca_DataSet.xsd" xmlns:mstns="http://tempuri.org/Discoteca_DataSet.xsd" xmlns="http://tempuri.org/Discoteca_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Discoteca_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Discoteca_DataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Discoteca_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtVinilos" msprop:Generator_RowEvHandlerName="dtVinilosRowChangeEventHandler" msprop:Generator_RowDeletedName="dtVinilosRowDeleted" msprop:Generator_RowDeletingName="dtVinilosRowDeleting" msprop:Generator_RowEvArgName="dtVinilosRowChangeEvent" msprop:Generator_TablePropName="dtVinilos" msprop:Generator_RowChangedName="dtVinilosRowChanged" msprop:Generator_UserTableName="dtVinilos" msprop:Generator_RowChangingName="dtVinilosRowChanging" msprop:Generator_RowClassName="dtVinilosRow" msprop:Generator_TableClassName="dtVinilosDataTable" msprop:Generator_TableVarName="tabledtVinilos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_vinilo" msprop:Generator_ColumnPropNameInTable="id_viniloColumn" msprop:Generator_ColumnPropNameInRow="id_vinilo" msprop:Generator_UserColumnName="id_vinilo" msprop:Generator_ColumnVarNameInTable="columnid_vinilo" type="xs:string" minOccurs="0" />
+              <xs:element name="titulo" msprop:Generator_ColumnPropNameInTable="tituloColumn" msprop:Generator_ColumnPropNameInRow="titulo" msprop:Generator_UserColumnName="titulo" msprop:Generator_ColumnVarNameInTable="columntitulo" type="xs:string" minOccurs="0" />
+              <xs:element name="anio_lanzamiento" msprop:Generator_ColumnPropNameInTable="anio_lanzamientoColumn" msprop:Generator_ColumnPropNameInRow="anio_lanzamiento" msprop:Generator_UserColumnName="anio_lanzamiento" msprop:Generator_ColumnVarNameInTable="columnanio_lanzamiento" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_UserColumnName="estado" msprop:Generator_ColumnVarNameInTable="columnestado" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_artista" msprop:Generator_ColumnPropNameInTable="nombre_artistaColumn" msprop:Generator_ColumnPropNameInRow="nombre_artista" msprop:Generator_UserColumnName="nombre_artista" msprop:Generator_ColumnVarNameInTable="columnnombre_artista" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_genero" msprop:Generator_ColumnPropNameInRow="nombre_genero" msprop:Generator_ColumnPropNameInTable="nombre_generoColumn" msprop:Generator_ColumnVarNameInTable="columnnombre_genero" msprop:Generator_UserColumnName="nombre_genero" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtArtistas" msprop:Generator_RowEvHandlerName="dtArtistasRowChangeEventHandler" msprop:Generator_RowDeletedName="dtArtistasRowDeleted" msprop:Generator_RowDeletingName="dtArtistasRowDeleting" msprop:Generator_RowEvArgName="dtArtistasRowChangeEvent" msprop:Generator_TablePropName="dtArtistas" msprop:Generator_RowChangedName="dtArtistasRowChanged" msprop:Generator_UserTableName="dtArtistas" msprop:Generator_RowChangingName="dtArtistasRowChanging" msprop:Generator_RowClassName="dtArtistasRow" msprop:Generator_TableClassName="dtArtistasDataTable" msprop:Generator_TableVarName="tabledtArtistas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_artista" msprop:Generator_ColumnPropNameInTable="id_artistaColumn" msprop:Generator_ColumnPropNameInRow="id_artista" msprop:Generator_UserColumnName="id_artista" msprop:Generator_ColumnVarNameInTable="columnid_artista" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_artista" msprop:Generator_ColumnPropNameInTable="nombre_artistaColumn" msprop:Generator_ColumnPropNameInRow="nombre_artista" msprop:Generator_UserColumnName="nombre_artista" msprop:Generator_ColumnVarNameInTable="columnnombre_artista" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

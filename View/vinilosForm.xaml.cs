@@ -35,6 +35,7 @@ namespace View
             _generosController = new GenerosController();
             idVinilo = null;
 
+            datepicker_fechaLanzamiento.SelectedDate = DateTime.Today; // valor por defecto
             label_tituloPagina.Content = "Nuevo Vinilo";
             CargarCombos();
         }

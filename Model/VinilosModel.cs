@@ -8,7 +8,7 @@ namespace Model
     public class VinilosModel
     {
         // Configuramos la cadena de conexión a la base de datos MySQL de AZURE
-        private string cadena = ConfigurationManager.ConnectionStrings["View.Properties.Settings.CadenaDiscoteca"].ConnectionString;
+        private string cadena = ConfigurationManager.ConnectionStrings["Model.Properties.Settings.CadenaDiscoteca"].ConnectionString;
 
         // Listar vinilos
         public DataTable ListarVinilos()
@@ -74,6 +74,48 @@ namespace Model
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
+            }
+        }
+
+        // Consulta para report
+        public DataTable ListarVinilosInforme()
+        {
+            using (MySqlConnection conn = new MySqlConnection(cadena))
+            {
+                string sql = @"
+            SELECT v.titulo, 
+                   v.anio_lanzamiento, 
+                   v.estado, 
+                   a.nombre_artista, 
+                   g.nombre_genero
+            FROM VINILOS v
+            INNER JOIN ARTISTAS a ON v.id_artista = a.id_artista
+            INNER JOIN GENEROS g ON v.id_genero = g.id_genero";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ListarVinilosArtistaInforme()
+        {
+            using (MySqlConnection conn = new MySqlConnection(cadena))
+            {
+                string sql = @"
+            SELECT v.titulo AS Titulo, 
+                   v.anio_lanzamiento, 
+                   v.estado, 
+                   a.nombre_artista
+            FROM VINILOS v
+            INNER JOIN ARTISTAS a ON v.id_artista = a.id_artista";
+
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
             }
         }
     }

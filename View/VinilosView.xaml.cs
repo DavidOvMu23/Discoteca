@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Controller;
+using Informes;
 
 namespace View
 {
@@ -107,6 +108,18 @@ namespace View
             VinilosForm vinilosForm = new VinilosForm();
             vinilosForm.Show();
             this.Close();
+        }
+
+        private void button_informesVinilos_Click(object sender, RoutedEventArgs e) 
+        { 
+            ViewReporteVinilos reporteVinilos = new ViewReporteVinilos(); 
+            reporteVinilos.Show();
+        }
+
+        private void button_informesVinilosArtista_Click(object sender, RoutedEventArgs e) 
+        { 
+            ViewReporteVinilosArtista reporteVinilosArtista = new ViewReporteVinilosArtista(); 
+            reporteVinilosArtista.Show(); 
         }
     }
 }

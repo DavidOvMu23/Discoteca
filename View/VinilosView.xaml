@@ -29,7 +29,7 @@
                 <Button x:Name="button_usuarios" Content="Usuarios" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_usuarios_Click"/>
             </Border>
         </StackPanel>
-        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,61"
+        <DataGrid x:Name="datagrid_vinilo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,66,38,114"
                   SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True"/>
         <Border x:Name="border_nuevoVinilo" CornerRadius="8" Background="#FF7FD05B" Margin="224,407,441,10">
             <Button x:Name="button_nuevoVinilo" Content="Nuevo Vinilo" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_nuevoVinilo_Click"/>
@@ -39,6 +39,12 @@
         </Border>
         <Border x:Name="border_editarVinilo" CornerRadius="8" Background="#FFDCB857" Margin="426,407,240,10">
             <Button x:Name="button_editarVinilo" Content="Editar Vinilo" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_editarVinilo_Click"/>
+        </Border>
+        <Border x:Name="border_informeVinilos" CornerRadius="8" Background="#FF4AD4C4" Margin="225,353,440,64">
+            <Button x:Name="button_informeVinilos" Content="Informe Vinilos" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_informesVinilos_Click"/>
+        </Border>
+        <Border x:Name="border_informeVinilosArtista" CornerRadius="8" Background="#FF4AD4C4" Margin="628,352,37,65">
+            <Button x:Name="button_informeVinilosArtista" Content="Informe Vinilos&#xD;&#xA;por artista" Background="Transparent" BorderThickness="0" Foreground="White" Click="button_informesVinilosArtista_Click"/>
         </Border>
 
     </Grid>

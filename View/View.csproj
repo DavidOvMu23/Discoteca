@@ -172,6 +172,10 @@
       <Project>{f4a6f9d5-3fa7-4fa7-b8c3-e41392a37a20}</Project>
       <Name>Controller</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Informes\Informes.csproj">
+      <Project>{390fa9a1-45ab-4c83-a1b8-bed163e5edf5}</Project>
+      <Name>Informes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
