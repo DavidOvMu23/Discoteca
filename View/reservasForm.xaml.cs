@@ -26,6 +26,9 @@ namespace View
         private int? idReserva = null;
         private DateTime _fechaSalida;
 
+        /// <summary>
+        /// Inicializa el formulario para crear un alquiler.
+        /// </summary>
         public ReservasForm()
         {
             InitializeComponent();
@@ -43,6 +46,14 @@ namespace View
             CargarCombos();
         }
 
+        /// <summary>
+        /// Inicializa el formulario para editar un alquiler.
+        /// </summary>
+        /// <param name="id">Id del alquiler.</param>
+        /// <param name="idUsuario">Id del usuario.</param>
+        /// <param name="idVinilo">Id del vinilo.</param>
+        /// <param name="fechaSalida">Fecha de salida.</param>
+        /// <param name="fechaEntregaPrevista">Fecha prevista de entrega.</param>
         public ReservasForm(int id, int idUsuario, int idVinilo, DateTime fechaSalida, DateTime fechaEntregaPrevista)
         {
             InitializeComponent();
@@ -65,6 +76,9 @@ namespace View
             datepicker_fechaLanzamiento_Copiar.IsEnabled = false;
         }
 
+        /// <summary>
+        /// Carga los combos de usuarios y vinilos.
+        /// </summary>
         private void CargarCombos()
         {
             var dtUsuarios = _usuariosController.ObtenerListadoUsuarios();
@@ -78,6 +92,11 @@ namespace View
             combobox_vinilo.SelectedValuePath = "id_vinilo";
         }
 
+        /// <summary>
+        /// Guarda los cambios del alquiler.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_guardar_Click(object sender, RoutedEventArgs e)
         {
             if (combobox_usuario.SelectedValue == null)
@@ -126,6 +145,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Abre la vista de vinilos.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_vinilos_Click(object sender, RoutedEventArgs e)
         {
             VinilosView vinilos = new VinilosView();
@@ -133,6 +157,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de artistas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
             ArtistasView artistas = new ArtistasView();
@@ -140,6 +169,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de géneros.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_generos_Click(object sender, RoutedEventArgs e)
         {
             GenerosView generos = new GenerosView();
@@ -147,6 +181,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de usuarios.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_usuarios_Click(object sender, RoutedEventArgs e)
         {
             UsuariosView usuarios = new UsuariosView();
@@ -154,6 +193,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Cancela y vuelve a la vista de reservas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_eliminarReserva_Click(object sender, RoutedEventArgs e)
         {
             ReservasView reservas = new ReservasView();
@@ -161,6 +205,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Maneja el cambio del checkbox de entrega.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 

@@ -22,6 +22,9 @@ namespace View
     public partial class UsuariosView : Window
     {
         private UsuariosController _controller;
+        /// <summary>
+        /// Inicializa la vista de usuarios.
+        /// </summary>
         public UsuariosView()
         {
             InitializeComponent();
@@ -29,12 +32,20 @@ namespace View
             CargarUsuarios();
         }
 
+        /// <summary>
+        /// Carga los usuarios en el grid.
+        /// </summary>
         private void CargarUsuarios()
         {
             DataTable db = _controller.ObtenerListadoUsuarios();
             datagrid_usuarios.ItemsSource = db.DefaultView;
         }
 
+        /// <summary>
+        /// Elimina el usuario seleccionado.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_eliminarUsuario_Click_1(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_usuarios.SelectedItem as DataRowView;
@@ -53,6 +64,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Abre el formulario para editar un usuario.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_editarUsuario_Click(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_usuarios.SelectedItem as DataRowView;
@@ -71,6 +87,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Abre la vista de reservas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
             ReservasView reservas = new ReservasView();
@@ -78,6 +99,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de artistas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
             ArtistasView artistas = new ArtistasView();
@@ -85,6 +111,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de géneros.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_generos_Click(object sender, RoutedEventArgs e)
         {
             GenerosView generos = new GenerosView();
@@ -92,6 +123,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de vinilos.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_vinilos_Click(object sender, RoutedEventArgs e)
         {
             VinilosView vinilos = new VinilosView();
@@ -99,6 +135,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre el formulario para crear un usuario.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_nuevoUsuario_Click(object sender, RoutedEventArgs e)
         {
             UsuariosForm usuariosForm = new UsuariosForm();

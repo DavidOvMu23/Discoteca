@@ -5,12 +5,19 @@ using System.Configuration;
 
 namespace Model
 {
+    /// <summary>
+    /// Acceso a datos de vinilos.
+    /// </summary>
     public class VinilosModel
     {
         // Configuramos la cadena de conexión a la base de datos MySQL de AZURE
         private string cadena = ConfigurationManager.ConnectionStrings["Model.Properties.Settings.CadenaDiscoteca"].ConnectionString;
 
-        // Listar vinilos
+        
+        /// <summary>
+        /// Obtiene todos los vinilos registrados.
+        /// </summary>
+        /// <returns>Tabla con los vinilos.</returns>
         public DataTable ListarVinilos()
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -26,7 +33,15 @@ namespace Model
             }
         }
 
-        // Insertar vinilo
+        
+        /// <summary>
+        /// Inserta un vinilo nuevo.
+        /// </summary>
+        /// <param name="titulo">Título del vinilo.</param>
+        /// <param name="anio">Año de lanzamiento.</param>
+        /// <param name="estado">Estado del vinilo.</param>
+        /// <param name="idArtista">Id del artista.</param>
+        /// <param name="idGenero">Id del género.</param>
         public void InsertarVinilo(string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -44,7 +59,16 @@ namespace Model
             }
         }
 
-        // Actualizar vinilo
+        
+        /// <summary>
+        /// Actualiza los datos de un vinilo existente.
+        /// </summary>
+        /// <param name="id">Id del vinilo.</param>
+        /// <param name="titulo">Título del vinilo.</param>
+        /// <param name="anio">Año de lanzamiento.</param>
+        /// <param name="estado">Estado del vinilo.</param>
+        /// <param name="idArtista">Id del artista.</param>
+        /// <param name="idGenero">Id del género.</param>
         public void ActualizarVinilo(int id, string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -63,7 +87,11 @@ namespace Model
             }
         }
 
-        // Eliminar vinilo
+        
+        /// <summary>
+        /// Elimina un vinilo por id.
+        /// </summary>
+        /// <param name="id">Id del vinilo.</param>
         public void EliminarVinilo(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -77,7 +105,11 @@ namespace Model
             }
         }
 
-        // Consulta para report
+        
+        /// <summary>
+        /// Obtiene datos de vinilos para el informe principal.
+        /// </summary>
+        /// <returns>Tabla con la información del informe.</returns>
         public DataTable ListarVinilosInforme()
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -99,6 +131,10 @@ namespace Model
             }
         }
 
+        /// <summary>
+        /// Obtiene datos de vinilos y artistas para informe.
+        /// </summary>
+        /// <returns>Tabla con la información del informe.</returns>
         public DataTable ListarVinilosArtistaInforme()
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))

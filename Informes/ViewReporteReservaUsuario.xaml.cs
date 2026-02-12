@@ -18,15 +18,25 @@ using System.Windows.Shapes;
 namespace Informes
 {
 
+    /// <summary>
+    /// Vista del reporte de reservas por usuario.
+    /// </summary>
     public partial class ViewReporteReservaUsuario : Window
     {
         private VinilosModel _model;
+        /// <summary>
+        /// Inicializa la vista del reporte de reservas por usuario.
+        /// </summary>
         public ViewReporteReservaUsuario()
         {
             InitializeComponent();
             reportViewer.Owner = this;
         }
 
+        /// <summary>
+        /// Muestra el reporte con los datos indicados.
+        /// </summary>
+        /// <param name="datos">Datos de reservas a mostrar.</param>
         public void ShowReport(System.Data.DataTable datos)
         {
             try

@@ -23,6 +23,9 @@ namespace Informes
     public partial class ViewReporteVinilosArtista : Window
     {
         private VinilosModel _model;
+        /// <summary>
+        /// Inicializa la vista del reporte de vinilos por artista.
+        /// </summary>
         public ViewReporteVinilosArtista()
         {
             InitializeComponent();
@@ -30,6 +33,9 @@ namespace Informes
             reportViewer.Owner = this;
         }
 
+        /// <summary>
+        /// Carga los datos y configura el reporte por artista.
+        /// </summary>
         private void CargarListadoVinilosArtista()
         {
             try

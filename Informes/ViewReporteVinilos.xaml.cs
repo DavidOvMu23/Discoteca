@@ -23,6 +23,9 @@ namespace Informes
     public partial class ViewReporteVinilos : Window
     {
         private VinilosModel _model;
+        /// <summary>
+        /// Inicializa la vista del reporte de vinilos.
+        /// </summary>
         public ViewReporteVinilos()
         {
             InitializeComponent();
@@ -30,6 +33,9 @@ namespace Informes
             reportViewer.Owner = this;
         }
 
+        /// <summary>
+        /// Carga los datos y configura el reporte.
+        /// </summary>
         private void CargarListadoVinilos()
         {
             try

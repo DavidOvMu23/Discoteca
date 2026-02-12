@@ -23,7 +23,14 @@ namespace Model
             }
         }
 
-        // Insertar alquiler
+        
+        /// <summary>
+        /// Inserta un alquiler nuevo.
+        /// </summary>
+        /// <param name="idUsuario">Id del usuario.</param>
+        /// <param name="idVinilo">Id del vinilo.</param>
+        /// <param name="fechaSalida">Fecha de salida.</param>
+        /// <param name="fechaEntregaPrevista">Fecha de entrega prevista.</param>
         public void InsertarAlquiler(int idUsuario, int idVinilo, DateTime fechaSalida, DateTime fechaEntregaPrevista)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -40,7 +47,16 @@ namespace Model
             }
         }
 
-        // Actualizar alquiler
+        
+        /// <summary>
+        /// Actualiza un alquiler existente.
+        /// </summary>
+        /// <param name="id">Id del alquiler.</param>
+        /// <param name="idUsuario">Id del usuario.</param>
+        /// <param name="idVinilo">Id del vinilo.</param>
+        /// <param name="fechaSalida">Fecha de salida.</param>
+        /// <param name="fechaEntregaPrevista">Fecha prevista de entrega.</param>
+        /// <param name="fechaDevolucionReal">Fecha real de devolución.</param>
         public void ActualizarAlquiler(int id, int idUsuario, int idVinilo, DateTime fechaSalida, DateTime fechaEntregaPrevista, DateTime? fechaDevolucionReal)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -68,7 +84,11 @@ namespace Model
             }
         }
 
-        // Eliminar alquiler
+       
+        /// <summary>
+        /// Elimina un alquiler por id.
+        /// </summary>
+        /// <param name="id">Id del alquiler.</param>
         public void EliminarAlquiler(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -82,7 +102,11 @@ namespace Model
             }
         }
 
-        // Metodo para la prueba de integración de conexión a la base de datos
+
+        /// <summary>
+        /// Metodo para probar la conexión a la base de datos MySQL
+        /// </summary>
+        /// <returns></returns>
         public bool PruebaConexion()
         {
             try
@@ -98,8 +122,12 @@ namespace Model
             }
         }
 
-        // Método para listar alquileres de un usuario especifico
-        // para el informe
+
+        /// <summary>
+        /// Metodo para listar alquileres de un usuario especifico para el informe. 
+        /// </summary>
+        /// <param name="idUsuarioSeleccionado"></param>
+        /// <returns></returns>
         public DataTable ListarAlquileresUsuarioInforme(int idUsuarioSeleccionado)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))

@@ -5,11 +5,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Test
 {
+    /// <summary>
+    /// Pruebas unitarias de reglas de negocio.
+    /// </summary>
     [TestClass]
     public sealed class TestUnitarios
     {
         [TestMethod]
         // prueba para comprobar si deja alquilar un vinilo que no ha sido devuelto
+        /// <summary>
+        /// Verifica que un vinilo con devolución pendiente no esté disponible.
+        /// </summary>
         public void ViniloDisponible()
         {
             var controller = new AlquileresController();
@@ -26,6 +32,9 @@ namespace Test
 
         [TestMethod]
         // prueba para comprobar si se toleran artistas repetidos
+        /// <summary>
+        /// Verifica que no se permitan artistas duplicados por nombre.
+        /// </summary>
         public void ArtistaRepetido()
         {
             var controller = new ArtistasController();

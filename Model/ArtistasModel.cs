@@ -23,7 +23,12 @@ namespace Model
             }
         }
 
-        // Crear artista
+        
+        /// <summary>
+        /// Inserta un artista nuevo.
+        /// </summary>
+        /// <param name="nombre">Nombre del artista.</param>
+        /// <param name="nacionalidad">Nacionalidad del artista.</param>
         public void InsertarArtista(string nombre, string nacionalidad)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -39,7 +44,13 @@ namespace Model
             }
         }
 
-        // Actualizar artista
+        
+        /// <summary>
+        /// Actualiza los datos de un artista.
+        /// </summary>
+        /// <param name="id">Id del artista.</param>
+        /// <param name="nombre">Nombre del artista.</param>
+        /// <param name="nacionalidad">Nacionalidad del artista.</param>
         public void ActualizarArtista(int id, string nombre, string nacionalidad)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -56,7 +67,11 @@ namespace Model
             }
         }
 
-        // Eliminar artista
+        
+        /// <summary>
+        /// Elimina un artista por id.
+        /// </summary>
+        /// <param name="id">Id del artista.</param>
         public void EliminarArtista(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))

@@ -24,6 +24,9 @@ namespace View
     public partial class VinilosView : Window
     {
         private VinilosController _controller;
+        /// <summary>
+        /// Inicializa la vista de vinilos.
+        /// </summary>
         public VinilosView()
         {
             InitializeComponent();
@@ -31,12 +34,20 @@ namespace View
             CargarVinilos();
         }
 
+        /// <summary>
+        /// Carga los vinilos en el grid.
+        /// </summary>
         private void CargarVinilos()
         {
             DataTable dt = _controller.ObtenerListadoVinilos();
             datagrid_vinilo.ItemsSource = dt.DefaultView;
         }
 
+        /// <summary>
+        /// Elimina el vinilo seleccionado.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_eliminarVinilo_Click(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_vinilo.SelectedItem as DataRowView;
@@ -55,6 +66,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Abre el formulario para editar un vinilo.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_editarVinilo_Click(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_vinilo.SelectedItem as DataRowView;
@@ -75,6 +91,11 @@ namespace View
                 MessageBox.Show("Seleccione un vinilo para editar.");
             }
         }
+        /// <summary>
+        /// Abre la vista de reservas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
             ReservasView reservas = new ReservasView();
@@ -82,6 +103,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de artistas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
             ArtistasView artistas = new ArtistasView();
@@ -89,6 +115,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de géneros.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_generos_Click(object sender, RoutedEventArgs e)
         {
             GenerosView generos = new GenerosView();
@@ -96,6 +127,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de usuarios.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_usuarios_Click(object sender, RoutedEventArgs e)
         {
             UsuariosView usuarios = new UsuariosView();
@@ -103,6 +139,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre el formulario para crear un vinilo.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_nuevoVinilo_Click(object sender, RoutedEventArgs e)
         {
             VinilosForm vinilosForm = new VinilosForm();
@@ -110,12 +151,22 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre el informe general de vinilos.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_informesVinilos_Click(object sender, RoutedEventArgs e) 
         { 
             ViewReporteVinilos reporteVinilos = new ViewReporteVinilos(); 
             reporteVinilos.Show();
         }
 
+        /// <summary>
+        /// Abre el informe de vinilos por artista.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_informesVinilosArtista_Click(object sender, RoutedEventArgs e) 
         { 
             ViewReporteVinilosArtista reporteVinilosArtista = new ViewReporteVinilosArtista(); 

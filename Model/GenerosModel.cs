@@ -23,7 +23,11 @@ namespace Model
             }
         }
 
-        // Crear genero
+        
+        /// <summary>
+        /// Inserta un género nuevo.
+        /// </summary>
+        /// <param name="nombre">Nombre del género.</param>
         public void InsertarGenero(string nombre)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -38,7 +42,12 @@ namespace Model
             }
         }
 
-        // Actualizar genero
+        
+        /// <summary>
+        /// Actualiza un género existente.
+        /// </summary>
+        /// <param name="id">Id del género.</param>
+        /// <param name="nombre">Nombre del género.</param>
         public void ActualizarGenero(int id, string nombre)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -54,7 +63,11 @@ namespace Model
             }
         }
 
-        // Eliminar genero
+        
+        /// <summary>
+        /// Elimina un género por id.
+        /// </summary>
+        /// <param name="id">Id del género.</param>
         public void EliminarGenero(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))

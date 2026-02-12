@@ -16,9 +16,15 @@ using System.Windows.Shapes;
 
 namespace View
 {
+    /// <summary>
+    /// Vista de gestión de géneros.
+    /// </summary>
     public partial class GenerosView : Window
     {
         private GenerosController _controller;
+        /// <summary>
+        /// Inicializa la vista de géneros.
+        /// </summary>
         public GenerosView()
         {
             InitializeComponent();
@@ -26,12 +32,20 @@ namespace View
             CargarGeneros();
 
         }
+        /// <summary>
+        /// Carga los géneros en el grid.
+        /// </summary>
         private void CargarGeneros()
         {
             DataTable dt = _controller.ObtenerListadoGeneros();
             datagrid_generos.ItemsSource = dt.DefaultView;
         }
 
+        /// <summary>
+        /// Elimina el género seleccionado.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_eliminarGenero_Click(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_generos.SelectedItem as DataRowView;
@@ -49,6 +63,11 @@ namespace View
                 }
             }
         }
+        /// <summary>
+        /// Abre el formulario para editar un género.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_editarGenero_Click(object sender, RoutedEventArgs e)
         {
             DataRowView row = datagrid_generos.SelectedItem as DataRowView;
@@ -68,6 +87,11 @@ namespace View
 
         
 
+        /// <summary>
+        /// Abre la vista de reservas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
             ReservasView reservas = new ReservasView();
@@ -75,6 +99,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de vinilos.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_vinilos_Click(object sender, RoutedEventArgs e)
         {
             VinilosView vinilos = new VinilosView();
@@ -82,6 +111,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de artistas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_artistas_Click(object sender, RoutedEventArgs e)
         {
             ArtistasView artistas = new ArtistasView();
@@ -89,6 +123,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de usuarios.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_usuarios_Click(object sender, RoutedEventArgs e)
         {
             UsuariosView usuarios = new UsuariosView();
@@ -96,6 +135,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre el formulario para crear un género.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_nuevoGenero_Click(object sender, RoutedEventArgs e)
         {
             GenerosForm generosForm = new GenerosForm();

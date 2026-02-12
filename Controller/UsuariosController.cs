@@ -6,22 +6,39 @@ using System.Globalization;
 
 namespace Controller
 {
+    /// <summary>
+    /// Lógica de negocio para usuarios.
+    /// </summary>
     public class UsuariosController
     {
         private UsuariosModel _model;
 
+        /// <summary>
+        /// Inicializa el controlador de usuarios.
+        /// </summary>
         public UsuariosController()
         {
             _model = new UsuariosModel();
         }
 
-        //Listar usuarios
+        
+        /// <summary>
+        /// Obtiene el listado de usuarios.
+        /// </summary>
+        /// <returns>Tabla con los usuarios.</returns>
         public DataTable ObtenerListadoUsuarios()
         {
             return _model.ListarUsuarios();
         }
 
-        // Crear usuario
+       
+        /// <summary>
+        /// Crea un usuario nuevo.
+        /// </summary>
+        /// <param name="nombre">Nombre del usuario.</param>
+        /// <param name="email">Correo del usuario.</param>
+        /// <param name="telefono">Teléfono del usuario.</param>
+        /// <returns><c>true</c> si se crea correctamente.</returns>
         public bool CrearUsuario(string nombre, string email, string telefono)
         {
             if (string.IsNullOrWhiteSpace(nombre))
@@ -34,7 +51,15 @@ namespace Controller
             return true;
         }
 
-        // Editar usuario
+        ç
+        /// <summary>
+        /// Edita un usuario existente.
+        /// </summary>
+        /// <param name="id">Id del usuario.</param>
+        /// <param name="nombre">Nombre del usuario.</param>
+        /// <param name="email">Correo del usuario.</param>
+        /// <param name="telefono">Teléfono del usuario.</param>
+        /// <returns><c>true</c> si se actualiza correctamente.</returns>
         public bool EditarUsuario(int id, string nombre, string email, string telefono)
         {
             if (string.IsNullOrWhiteSpace(nombre))
@@ -46,7 +71,12 @@ namespace Controller
             return true ;
         }
 
-        // Eliminar usuario
+        
+        /// <summary>
+        /// Elimina un usuario por id.
+        /// </summary>
+        /// <param name="id">Id del usuario.</param>
+        /// <returns><c>true</c> si se elimina correctamente.</returns>
         public bool EliminarUsuario(int id)
         {
             _model.EliminarUsuario(id);

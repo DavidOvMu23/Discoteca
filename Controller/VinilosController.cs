@@ -8,22 +8,41 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
+    /// <summary>
+    /// Lógica de negocio para vinilos.
+    /// </summary>
     public class VinilosController
     {
         private VinilosModel _model;
 
+        /// <summary>
+        /// Inicializa el controlador de vinilos.
+        /// </summary>
         public VinilosController()
         {
             _model = new VinilosModel();
         }
 
-        //Listar usuarios
+        
+        /// <summary>
+        /// Obtiene el listado de vinilos.
+        /// </summary>
+        /// <returns>Tabla con los vinilos.</returns>
         public DataTable ObtenerListadoVinilos()
         {
             return _model.ListarVinilos();
         }
 
-        //Crear vinilo
+        
+        /// <summary>
+        /// Crea un vinilo nuevo.
+        /// </summary>
+        /// <param name="titulo">Título del vinilo.</param>
+        /// <param name="anio">Año de lanzamiento.</param>
+        /// <param name="estado">Estado del vinilo.</param>
+        /// <param name="idArtista">Id del artista.</param>
+        /// <param name="idGenero">Id del género.</param>
+        /// <returns><c>true</c> si se crea correctamente.</returns>
         public bool CrearVinilo(string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             if (string.IsNullOrWhiteSpace(titulo))
@@ -40,7 +59,17 @@ namespace Controller
             return true;
         }
 
-        //Editar vinilo
+        
+        /// <summary>
+        /// Edita un vinilo existente.
+        /// </summary>
+        /// <param name="id">Id del vinilo.</param>
+        /// <param name="titulo">Título del vinilo.</param>
+        /// <param name="anio">Año de lanzamiento.</param>
+        /// <param name="estado">Estado del vinilo.</param>
+        /// <param name="idArtista">Id del artista.</param>
+        /// <param name="idGenero">Id del género.</param>
+        /// <returns><c>true</c> si se actualiza correctamente.</returns>
         public bool EditarVinilo(int id, string titulo, int anio, string estado, int idArtista, int idGenero)
         {
             if (string.IsNullOrWhiteSpace(titulo))
@@ -57,7 +86,12 @@ namespace Controller
             return true;
         }
 
-        //Eliminar vinilo
+        
+        /// <summary>
+        /// Elimina un vinilo por id.
+        /// </summary>
+        /// <param name="id">Id del vinilo.</param>
+        /// <returns><c>true</c> si se elimina correctamente.</returns>
         public bool EliminarVinilo(int id)
         {
             _model.EliminarVinilo(id);

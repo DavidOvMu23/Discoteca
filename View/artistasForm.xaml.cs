@@ -23,7 +23,10 @@ namespace View
         private ArtistasController _controller;
         private int? idArtista = null; //lo del ? es para que pueda ser null, porque al crear un nuevo artista no tenemos id
 
-        // Constructor para crear un nuevo artista
+
+        /// <summary>
+        /// Inicializa el formulario para crear un artista.
+        /// </summary>
         public ArtistasForm()
         {
             InitializeComponent();
@@ -33,6 +36,12 @@ namespace View
             label_tituloPagina.Content = "Nuevo Artista";
         }
 
+        /// <summary>
+        /// Inicializa el formulario para editar un artista.
+        /// </summary>
+        /// <param name="id">Id del artista.</param>
+        /// <param name="nombre">Nombre del artista.</param>
+        /// <param name="nacionalidad">Nacionalidad del artista.</param>
         public ArtistasForm(int id, string nombre, string nacionalidad)
         {
             InitializeComponent();
@@ -44,6 +53,11 @@ namespace View
             label_tituloPagina.Content = "Editar Artista";
         }
 
+        /// <summary>
+        /// Guarda los cambios del artista.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_guardar_Click(object sender, RoutedEventArgs e)
         {
             string nombre = textbox_nombre.Text;
@@ -71,6 +85,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Abre la vista de reservas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_reservas_Click(object sender, RoutedEventArgs e)
         {
             ReservasView reservas = new ReservasView();
@@ -78,6 +97,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de vinilos.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_vinilos_Click(object sender, RoutedEventArgs e)
         {
             VinilosView vinilos = new VinilosView();
@@ -85,6 +109,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de géneros.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_generos_Click(object sender, RoutedEventArgs e)
         {
             GenerosView generos = new GenerosView();
@@ -92,6 +121,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Abre la vista de usuarios.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_usuarios_Click(object sender, RoutedEventArgs e)
         {
             UsuariosView usuarios = new UsuariosView();
@@ -99,6 +133,11 @@ namespace View
             this.Close();
         }
 
+        /// <summary>
+        /// Cancela y vuelve al listado de artistas.
+        /// </summary>
+        /// <param name="sender">Origen del evento.</param>
+        /// <param name="e">Datos del evento.</param>
         private void button_cancelar_Click(object sender, RoutedEventArgs e)
         {
             ArtistasView artistas = new ArtistasView();

@@ -23,7 +23,14 @@ namespace Model
             }
         }
 
-        // Crear usuario
+        
+        /// <summary>
+        /// Inserta un usuario nuevo.
+        /// </summary>
+        /// <param name="nombre">Nombre del usuario.</param>
+        /// <param name="email">Correo del usuario.</param>
+        /// <param name="telefono">Teléfono del usuario.</param>
+        /// <param name="fechaRegistro">Fecha de registro.</param>
         public void InsertarUsuario(string nombre, string email, string telefono, DateTime fechaRegistro)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -41,7 +48,14 @@ namespace Model
             }
         }
 
-        // Actualizar usuario
+        
+        /// <summary>
+        /// Actualiza los datos de un usuario.
+        /// </summary>
+        /// <param name="id">Id del usuario.</param>
+        /// <param name="nombre">Nombre del usuario.</param>
+        /// <param name="email">Correo del usuario.</param>
+        /// <param name="telefono">Teléfono del usuario.</param>
         public void ActualizarUsuario(int id, string nombre, string email, string telefono)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
@@ -59,7 +73,11 @@ namespace Model
             }
         }
 
-        // Eliminar usuario
+       
+        /// <summary>
+        /// Elimina un usuario por id.
+        /// </summary>
+        /// <param name="id">Id del usuario.</param>
         public void EliminarUsuario(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(cadena))
