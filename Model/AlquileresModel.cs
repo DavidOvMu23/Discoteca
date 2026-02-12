@@ -52,10 +52,15 @@ namespace Model
                 cmd.Parameters.AddWithValue("@idVinilo", idVinilo);
                 cmd.Parameters.AddWithValue("@fechaSalida", fechaSalida.ToString("yyyy-MM-dd"));
                 cmd.Parameters.AddWithValue("@fechaEntregaPrevista", fechaEntregaPrevista.ToString("yyyy-MM-dd"));
+
                 if (fechaDevolucionReal.HasValue)
+                {
                     cmd.Parameters.AddWithValue("@fechaDevolucion", fechaDevolucionReal.Value.ToString("yyyy-MM-dd"));
+                }
                 else
+                {
                     cmd.Parameters.AddWithValue("@fechaDevolucion", DBNull.Value);
+                }
 
                 cmd.Parameters.AddWithValue("@id", id);
                 conn.Open();
