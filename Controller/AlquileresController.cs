@@ -79,5 +79,12 @@ namespace Controller
 
             return true;
         }
+
+        // Obtener alquileres filtrados por id de usuario para que así el
+        // informe no tenga acceso al model y se mantenga la separación de capas
+        public DataTable ObtenerAlquileresPorUsuario(int idUsuario)
+        {
+            return _model.ListarAlquileresUsuarioInforme(idUsuario);
+        }
     }
 }

@@ -79,6 +79,9 @@
     <Compile Include="ReservasForm.xaml.cs">
       <DependentUpon>ReservasForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ReservasUsuarioInforme.xaml.cs">
+      <DependentUpon>ReservasUsuarioInforme.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UsuariosForm.xaml.cs">
       <DependentUpon>UsuariosForm.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ReservasForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ReservasUsuarioInforme.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

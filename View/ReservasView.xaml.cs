@@ -118,5 +118,12 @@ namespace View
             reservasForm.Show();
             this.Close();
         }
+
+        private void button_generarInforme_Click(object sender, RoutedEventArgs e)
+        {
+            ReservasUsuariosInforme reservasUsuariosInforme = new ReservasUsuariosInforme(); 
+            reservasUsuariosInforme.Show();
+            this.Close();
+        }
     }
 }

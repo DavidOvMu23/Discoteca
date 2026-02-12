@@ -20,7 +20,7 @@
               <xs:element name="anio_lanzamiento" msprop:Generator_ColumnPropNameInTable="anio_lanzamientoColumn" msprop:Generator_ColumnPropNameInRow="anio_lanzamiento" msprop:Generator_UserColumnName="anio_lanzamiento" msprop:Generator_ColumnVarNameInTable="columnanio_lanzamiento" type="xs:string" minOccurs="0" />
               <xs:element name="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_UserColumnName="estado" msprop:Generator_ColumnVarNameInTable="columnestado" type="xs:string" minOccurs="0" />
               <xs:element name="nombre_artista" msprop:Generator_ColumnPropNameInTable="nombre_artistaColumn" msprop:Generator_ColumnPropNameInRow="nombre_artista" msprop:Generator_UserColumnName="nombre_artista" msprop:Generator_ColumnVarNameInTable="columnnombre_artista" type="xs:string" minOccurs="0" />
-              <xs:element name="nombre_genero" msprop:Generator_ColumnPropNameInRow="nombre_genero" msprop:Generator_ColumnPropNameInTable="nombre_generoColumn" msprop:Generator_ColumnVarNameInTable="columnnombre_genero" msprop:Generator_UserColumnName="nombre_genero" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_genero" msprop:Generator_UserColumnName="nombre_genero" msprop:Generator_ColumnPropNameInTable="nombre_generoColumn" msprop:Generator_ColumnPropNameInRow="nombre_genero" msprop:Generator_ColumnVarNameInTable="columnnombre_genero" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -29,6 +29,16 @@
             <xs:sequence>
               <xs:element name="id_artista" msprop:Generator_ColumnPropNameInTable="id_artistaColumn" msprop:Generator_ColumnPropNameInRow="id_artista" msprop:Generator_UserColumnName="id_artista" msprop:Generator_ColumnVarNameInTable="columnid_artista" type="xs:string" minOccurs="0" />
               <xs:element name="nombre_artista" msprop:Generator_ColumnPropNameInTable="nombre_artistaColumn" msprop:Generator_ColumnPropNameInRow="nombre_artista" msprop:Generator_UserColumnName="nombre_artista" msprop:Generator_ColumnVarNameInTable="columnnombre_artista" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReservas" msprop:Generator_RowEvHandlerName="dtReservasRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReservasRowDeleted" msprop:Generator_RowDeletingName="dtReservasRowDeleting" msprop:Generator_RowEvArgName="dtReservasRowChangeEvent" msprop:Generator_TablePropName="dtReservas" msprop:Generator_RowChangedName="dtReservasRowChanged" msprop:Generator_RowChangingName="dtReservasRowChanging" msprop:Generator_TableClassName="dtReservasDataTable" msprop:Generator_RowClassName="dtReservasRow" msprop:Generator_TableVarName="tabledtReservas" msprop:Generator_UserTableName="dtReservas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_vinilo" msprop:Generator_ColumnPropNameInRow="nombre_vinilo" msprop:Generator_ColumnPropNameInTable="nombre_viniloColumn" msprop:Generator_ColumnVarNameInTable="columnnombre_vinilo" msprop:Generator_UserColumnName="nombre_vinilo" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_salida" msprop:Generator_ColumnPropNameInRow="fecha_salida" msprop:Generator_ColumnPropNameInTable="fecha_salidaColumn" msprop:Generator_ColumnVarNameInTable="columnfecha_salida" msprop:Generator_UserColumnName="fecha_salida" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_entrega_prevista" msprop:Generator_ColumnPropNameInRow="fecha_entrega_prevista" msprop:Generator_ColumnPropNameInTable="fecha_entrega_previstaColumn" msprop:Generator_ColumnVarNameInTable="columnfecha_entrega_prevista" msprop:Generator_UserColumnName="fecha_entrega_prevista" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_devolucion_real" msprop:Generator_ColumnPropNameInRow="fecha_devolucion_real" msprop:Generator_ColumnPropNameInTable="fecha_devolucion_realColumn" msprop:Generator_ColumnVarNameInTable="columnfecha_devolucion_real" msprop:Generator_UserColumnName="fecha_devolucion_real" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

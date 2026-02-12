@@ -74,6 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ViewReporteReservaUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ViewReporteVinilosArtista.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +98,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>discotecaDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ReporteReservasUsuario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteReservasUsuario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReporteVinilos.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +115,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteVinilosArtista.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewReporteReservaUsuario.xaml.cs">
+      <DependentUpon>ViewReporteReservaUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewReporteVinilosArtista.xaml.cs">
       <DependentUpon>ViewReporteVinilosArtista.xaml</DependentUpon>
@@ -131,6 +144,10 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteReservasUsuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteReservasUsuario.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteVinilos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

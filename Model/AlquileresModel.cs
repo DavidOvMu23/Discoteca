@@ -97,5 +97,37 @@ namespace Model
                 return false;
             }
         }
+
+        // Método para listar alquileres de un usuario especifico
+        // para el informe
+        public DataTable ListarAlquileresUsuarioInforme(int idUsuarioSeleccionado)
+        {
+            using (MySqlConnection conn = new MySqlConnection(cadena))
+            {
+                string sql = @"
+            SELECT v.titulo AS nombre_vinilo, 
+                   a.fecha_salida, 
+                   a.fecha_entrega_prevista, 
+                   a.fecha_devolucion_real,
+                   u.nombre AS NombreUsuario
+            FROM ALQUILERES a
+            INNER JOIN USUARIOS u ON a.id_usuario = u.id_usuario
+            INNER JOIN VINILOS v ON a.id_vinilo = v.id_vinilo
+            WHERE u.id_usuario = @idUsuario
+            ORDER BY a.fecha_salida";
+
+                // Preparamos el comando
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                // Pasamos la ID del ComboBox
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuarioSeleccionado);
+
+                // Llenamos la tabla
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
     }
 }
