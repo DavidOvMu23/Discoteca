@@ -32,9 +32,9 @@ namespace Test
             var dt = new DataTable();
             dt.Columns.Add("nombre_artista", typeof(string));
 
-            dt.Rows.Add("Muse");
+            dt.Rows.Add("Imagine Dragons");
 
-            var disponible = controller.NombreArtistaDisponible(dt, "muse");
+            var disponible = controller.NombreArtistaDisponible(dt, "imagine dragons");
 
             Assert.IsFalse(disponible);
         }

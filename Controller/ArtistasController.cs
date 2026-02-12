@@ -72,12 +72,12 @@ namespace Controller
                 throw new Exception("El nombre es obligatorio");
             }
 
-            string nombreNormalizado = nombre.Trim();
+            string nombreBuscado = nombre.ToLower();
 
             foreach (DataRow row in artistas.Rows)
             {
-                string existente = row["nombre_artista"]?.ToString()?.Trim() ?? string.Empty;
-                if (string.Equals(existente, nombreNormalizado, StringComparison.OrdinalIgnoreCase))
+                string existente = row["nombre_artista"].ToString().ToLower();
+                if (existente == nombreBuscado)
                 {
                     return false;
                 }

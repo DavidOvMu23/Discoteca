@@ -71,8 +71,7 @@ namespace Controller
 
             foreach (DataRow row in alquileres.Rows)
             {
-                if (Convert.ToInt32(row["id_vinilo"]) == idVinilo &&
-                    (row["fecha_devolucion_real"] == DBNull.Value || row["fecha_devolucion_real"] == null))
+                if ((int)row["id_vinilo"] == idVinilo && row["fecha_devolucion_real"] == DBNull.Value)
                 {
                     return false;
                 }
