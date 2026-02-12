@@ -1,3 +1,3 @@
 # Viniloteca
 
-https://www.figma.com/design/eOy4nqPyRQZuvfaPGbDMdR/Discoteca?node-id=0-1&m=dev&t=5LOb7U5ncjZmlUjl-1
+[![Figma](https://img.shields.io/badge/Figma-Diseño%20del%20Proyecto-F24E1E?style=for-the-badge&logo=figma)](https://www.figma.com/file/eOy4nqPyRQZuvfaPGbDMdR/Discoteca)
