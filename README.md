@@ -33,6 +33,7 @@ Si la ejecutas desde Visual Studio:
 ## Documentación
 La documentación se encuentra en la carpeta [`Docs`](Docs/). Abre el archivo `index.html` desde esa carpeta.
 
+[`Documentación Técnica`](Documentacion_tecnica_Discoteca.pdf) completo de la aplicación
 
 ## Mockups
 [![Figma](https://img.shields.io/badge/Figma-Diseño%20del%20Proyecto-F24E1E?style=for-the-badge&logo=figma)](https://www.figma.com/file/eOy4nqPyRQZuvfaPGbDMdR/Discoteca)
