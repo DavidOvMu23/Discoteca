@@ -10,7 +10,7 @@ Aplicación de escritorio para la gestión de una discoteca, con una arquitectur
 
 ## Instalación
 Opción principal (instalador):
-1. Ve a la carpeta `publish`.
+1. Ve a la carpeta [`publish`](publish/).
 2. Ejecuta `setup.exe` para instalar la aplicación.
 
 Opción alternativa (desde Visual Studio):
@@ -19,12 +19,15 @@ Opción alternativa (desde Visual Studio):
 3. Restaura los paquetes NuGet si se solicita.
 
 ## Cómo ejecutar
-Si instalaste con `setup.exe`, inicia la aplicación desde el acceso directo creado o desde el menú Inicio.
+Si instalaste con `setup.exe` desde la carpeta [`publish`](publish/), inicia la aplicación desde el acceso directo creado o desde el menú Inicio.
 
 Si la ejecutas desde Visual Studio:
 1. Establece el proyecto `View` como proyecto de inicio.
 2. Compila la solución.
 3. Ejecuta la aplicación con `F5`.
+
+## Documentación
+La documentación se encuentra en la carpeta [`Docs`](Docs/). Abre el archivo `index.html` desde esa carpeta.
 
 ## Mockups
 [![Figma](https://img.shields.io/badge/Figma-Diseño%20del%20Proyecto-F24E1E?style=for-the-badge&logo=figma)](https://www.figma.com/file/eOy4nqPyRQZuvfaPGbDMdR/Discoteca)
