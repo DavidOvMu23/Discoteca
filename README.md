@@ -1,4 +1,4 @@
-# Viniloteca
+# Discoteca
 
 ## Descripción del proyecto
 Aplicación de escritorio para la gestión de una discoteca, con una arquitectura por capas (Modelo, Controlador, Vista, Informes y Pruebas).
