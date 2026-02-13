@@ -26,11 +26,17 @@ Si la ejecutas desde Visual Studio:
 2. Compila la solución.
 3. Ejecuta la aplicación con `F5`.
 
+## Manual de usuario
+[`Manual`](Manual_de_usuario_Discoteca.pdf) completo de uso de la aplicación
+
+
 ## Documentación
 La documentación se encuentra en la carpeta [`Docs`](Docs/). Abre el archivo `index.html` desde esa carpeta.
 
+
 ## Mockups
 [![Figma](https://img.shields.io/badge/Figma-Diseño%20del%20Proyecto-F24E1E?style=for-the-badge&logo=figma)](https://www.figma.com/file/eOy4nqPyRQZuvfaPGbDMdR/Discoteca)
+
 
 ## Autores
 - David Oviedo
